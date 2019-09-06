@@ -47,9 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Criteria.cs" />
-    <Compile Include="Classes\Phase.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
     <Compile Include="Interactors\FileUser.cs" />
+    <Compile Include="Interactors\GetCriteriaMatrix.cs" />
+    <Compile Include="Interactors\GetCriterias.cs" />
+    <Compile Include="Interactors\GetSoftwareTools.cs" />
+    <Compile Include="Interactors\IGetItems.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,7 +90,6 @@
   <ItemGroup>
     <Content Include="Data\Criteria.xml" />
     <Content Include="Data\LifeCyclePhases.xml" />
-    <Content Include="Data\Metrics.xml" />
     <Content Include="Data\SoftwareTools.xml" />
     <Content Include="Data\SoftwareToolsAndCritariaMatrix.txt" />
   </ItemGroup>
