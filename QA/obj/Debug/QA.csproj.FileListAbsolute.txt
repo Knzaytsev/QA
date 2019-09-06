@@ -1,9 +1,4 @@
-E:\GitHub\QA\QA\bin\Debug\QA.exe.config
-E:\GitHub\QA\QA\bin\Debug\QA.exe
-E:\GitHub\QA\QA\bin\Debug\QA.pdb
-E:\GitHub\QA\QA\obj\Debug\QA.csprojAssemblyReference.cache
+E:\GitHub\QA\QA\obj\Debug\QA.Form1.resources
 E:\GitHub\QA\QA\obj\Debug\QA.Properties.Resources.resources
 E:\GitHub\QA\QA\obj\Debug\QA.csproj.GenerateResource.cache
 E:\GitHub\QA\QA\obj\Debug\QA.csproj.CoreCompileInputs.cache
-E:\GitHub\QA\QA\obj\Debug\QA.exe
-E:\GitHub\QA\QA\obj\Debug\QA.pdb
