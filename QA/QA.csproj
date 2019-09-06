@@ -79,6 +79,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Data\Criteria.xml" />
+    <Content Include="Data\LifeCyclePhases.xml" />
     <Content Include="Data\SoftwareTools.xml" />
     <Content Include="Data\SoftwareToolsAndCritariaMatrix.txt" />
   </ItemGroup>
