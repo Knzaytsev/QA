@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ArrayOfSoftwareTool xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<SoftwareTool>
+		<Id>0</Id>
+		<IdGOST>5011</IdGOST>
+		<Description>Операционные системы и средства их расширения</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>1</Id>
+		<IdGOST>5012</IdGOST>
+		<Description>Программные средства управления базами данных</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>2</Id>
+		<IdGOST>5013</IdGOST>
+		<Description>Инструментально-технологические средства программирования</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>3</Id>
+		<IdGOST>5014</IdGOST>
+		<Description>ПС интерфейса и управления коммуникациями</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>4</Id>
+		<IdGOST>5015</IdGOST>
+		<Description>ПС организации вычислительного процесса (планирования, контроля)</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>5</Id>
+		<IdGOST>5016</IdGOST>
+		<Description>Сервисные программы</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>6</Id>
+		<IdGOST>5017</IdGOST>
+		<Description>ПС обслуживания вычислительной техники</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>7</Id>
+		<IdGOST>503</IdGOST>
+		<Description>Прикладные программы для научных исследований</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>8</Id>
+		<IdGOST>504</IdGOST>
+		<Description>Прикладные программы для проектирования</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>9</Id>
+		<IdGOST>505</IdGOST>
+		<Description>Прикладные программы для управления техническими устройствами и технологическими процессами</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>10</Id>
+		<IdGOST>506</IdGOST>
+		<Description>рикладные программы для решения экономических задач</Description>
+	</SoftwareTool>
+	<SoftwareTool>
+		<Id>11</Id>
+		<IdGOST>509</IdGOST>
+		<Description>Прочие ПС</Description>
+	</SoftwareTool>
+</ArrayOfSoftwareTool>
