@@ -68,6 +68,16 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CriteriaMatrixRepository.cs" />
+    <Compile Include="Repositories\IGetElement.cs" />
+    <Compile Include="Repositories\LifeCyclePhaseRepository.cs" />
+    <Compile Include="Repositories\SoftwareToolRepository.cs" />
+    <Compile Include="Stages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stages.Designer.cs">
+      <DependentUpon>Stages.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -83,6 +93,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Stages.resx">
+      <DependentUpon>Stages.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

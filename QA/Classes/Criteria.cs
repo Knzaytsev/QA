@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace QA.Classes
 {
     [Serializable]
-    class Criteria
+    public class Criteria
     {
         public int Id { get; set; }
 

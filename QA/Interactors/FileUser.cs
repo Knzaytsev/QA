@@ -1,11 +1,9 @@
-﻿using QA.Classes;
+﻿using QA.Repositories;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Serialization;
 
 namespace QA.Interactors
 {
@@ -13,14 +11,29 @@ namespace QA.Interactors
     {
         private string path;
 
-        public FileUser(string path)
+        private IGetElement getElement;
+
+        public string Path
         {
-            this.path = path;
+            get { return path; }
+            set { path = value; }
         }
 
-        public object GetItems(IGetItems getItems)
+        public IGetElement GetElement
         {
-            return getItems.GetItems(path);
+            get { return getElement; }
+            set { getElement = value; }
+        }
+
+        public FileUser(string path, IGetElement getElement)
+        {
+            this.path = path;
+            this.getElement = getElement;
+        }
+
+        public object getElementById(int id)
+        {
+            return getElement.GetElement(path, id);
         }
     }
 }
