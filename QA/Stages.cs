@@ -15,7 +15,7 @@ namespace QA
 {
     public partial class Stages : Form
     {
-        string LCPhasesPath = @"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\LifeCyclePhases.xml";
+        string LCPhasesPath = @"..\..\Data\LifeCyclePhases.xml";
         public Stages()
         {
             InitializeComponent();
@@ -28,8 +28,7 @@ namespace QA
             if (radioButton.Checked)
             {
                 int id = int.Parse((string)radioButton.Tag);
-
-                Phase phase = GetPhase(id);
+                GetPhase(id);
             }
         }
 
@@ -40,8 +39,7 @@ namespace QA
             if (radioButton.Checked)
             {
                 int id = int.Parse((string)radioButton.Tag);
-
-                Phase phase = GetPhase(id);
+                GetPhase(id);
             }
         }
 
@@ -52,8 +50,7 @@ namespace QA
             if (radioButton.Checked)
             {
                 int id = int.Parse((string)radioButton.Tag);
-
-                Phase phase = GetPhase(id);
+                GetPhase(id);
             }
         }
 
@@ -64,8 +61,7 @@ namespace QA
             if (radioButton.Checked)
             {
                 int id = int.Parse((string)radioButton.Tag);
-
-                Phase phase = GetPhase(id);
+                GetPhase(id);
             }
         }
 
@@ -76,8 +72,7 @@ namespace QA
             if (radioButton.Checked)
             {
                 int id = int.Parse((string)radioButton.Tag);
-
-                Phase phase = GetPhase(id);
+                GetPhase(id);
             }
         }
 
@@ -88,8 +83,7 @@ namespace QA
             if (radioButton.Checked)
             {
                 int id = int.Parse((string)radioButton.Tag);
-
-                Phase phase = GetPhase(id);
+                GetPhase(id);
             }
         }
 
@@ -100,8 +94,7 @@ namespace QA
             if (radioButton.Checked)
             {
                 int id = int.Parse((string)radioButton.Tag);
-
-                Phase phase = GetPhase(id);
+                GetPhase(id);
             }
         }
 
@@ -112,20 +105,19 @@ namespace QA
             if (radioButton.Checked)
             {
                 int id = int.Parse((string)radioButton.Tag);
-
-                Phase phase = GetPhase(id);
+                GetPhase(id);
             }
         }
 
-        private Phase GetPhase(int id)
+        private void GetPhase(int id)
         {
             FileUser fileUser = new FileUser(LCPhasesPath, new LifeCyclePhaseRepository());
-            return (Phase)fileUser.getElementById(id);
+            DataSingleton.GetInstance(((Phase)fileUser.getElementById(id)).Id);
         }
 
         private void ChoosePhase_Click(object sender, EventArgs e)
         {
-
+            MetricsFilter.FilterMetrics();
         }
 
         private void Back_Click(object sender, EventArgs e)
