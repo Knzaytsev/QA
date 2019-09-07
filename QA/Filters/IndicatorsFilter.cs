@@ -11,11 +11,9 @@ namespace QA.Filters
 {
     public class IndicatorsFilter
     {
-        private string IndicatorsPath = @"..\..\Data\Indicators.xml";
-
         public Indicator[] FilterIndicators()
         {
-            FileUser fileUser = new FileUser(IndicatorsPath, new IndicatorsRepository());
+            FileUser fileUser = new FileUser(Properties.Settings.Default.Indicators, new IndicatorsRepository());
             Indicator[] indicators = (Indicator[])fileUser.getElements();
 
             MetricsFilter metricsFilter = new MetricsFilter();

@@ -11,11 +11,9 @@ namespace QA.Filters
 {
     public class MetricsFilter
     {
-        private string MetricsPath = @"..\..\Data\Metrics.xml";
-
         public Metric[] FilterMetrics()
         {
-            FileUser fileUser = new FileUser(MetricsPath, new MetricRepository());
+            FileUser fileUser = new FileUser(Properties.Settings.Default.Metrics, new MetricRepository());
             Metric[] metrics = (Metric[])fileUser.getElements();
             metrics = FilterByPhase(metrics);
             metrics = SetPriority(metrics);

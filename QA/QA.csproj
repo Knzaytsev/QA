@@ -51,6 +51,7 @@
     <Compile Include="Classes\Criteria.cs" />
     <Compile Include="Classes\Metric.cs" />
     <Compile Include="Classes\Phase.cs" />
+    <Compile Include="Classes\Result.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
     <Compile Include="DataSingleton.cs" />
     <Compile Include="Evaluation.cs">

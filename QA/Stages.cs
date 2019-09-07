@@ -16,7 +16,6 @@ namespace QA
 {
     public partial class Stages : Form
     {
-        string LCPhasesPath = @"..\..\Data\LifeCyclePhases.xml";
         public Stages()
         {
             InitializeComponent();
@@ -112,7 +111,7 @@ namespace QA
 
         private void GetPhase(int id)
         {
-            FileUser fileUser = new FileUser(LCPhasesPath, new LifeCyclePhaseRepository());
+            FileUser fileUser = new FileUser(Properties.Settings.Default.Phases, new LifeCyclePhaseRepository());
             DataSingleton.GetInstance(((Phase)fileUser.getElementById(id)).Id);
         }
 
