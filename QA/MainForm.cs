@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace QA
 {
     public partial class MainForm : Form
     {
-        string STsPath = @"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\SoftwareTools.xml";
+        string STsPath = @"..\..\Data\SoftwareTools.xml";//@"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\SoftwareTools.xml";
         string STandCM = @"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\SoftwareToolsAndCritariaMatrix.txt";
         public MainForm()
         {
