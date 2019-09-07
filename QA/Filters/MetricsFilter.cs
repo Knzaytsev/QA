@@ -7,7 +7,7 @@ using QA.Classes;
 using QA.Interactors;
 using QA.Repositories;
 
-namespace QA
+namespace QA.Filters
 {
     public static class MetricsFilter
     {
