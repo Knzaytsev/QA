@@ -31,7 +31,7 @@ namespace QA
             if(radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -42,7 +42,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -53,7 +53,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -64,7 +64,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -75,7 +75,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -86,7 +86,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -97,7 +97,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -108,7 +108,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -119,7 +119,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -130,7 +130,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -141,7 +141,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -152,17 +152,17 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
-        private int[] GetFilteredCriteria(int id)
+        private void GetFilteredCriteria(int id)
         {
             FileUser fileUser = new FileUser(STsPath, new SoftwareToolRepository());
             SoftwareTool softwareTool = (SoftwareTool)fileUser.getElementById(id);
 
             fileUser = new FileUser(STandCM, new CriteriaMatrixRepository());
-            return (int[])fileUser.getElementById(softwareTool.Id);
+            DataSingleton.GetInstance((int[])fileUser.getElementById(softwareTool.Id));
         }
 
         private void ChooseClass_Click(object sender, EventArgs e)

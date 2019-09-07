@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QA.Classes
 {
+    [Serializable]
     public class Metric
     {
         public int Id { get; set; }
@@ -16,6 +17,11 @@ namespace QA.Classes
 
         public string Metrics { get; set; }
 
-        public Metric() { }
+        public int Priority { get; set; }
+
+        public Metric()
+        {
+
+        }
     }
 }
