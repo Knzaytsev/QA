@@ -1,0 +1,1228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ArrayOfIndicator xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Indicator>
+		<Id>0</Id>
+		<Code>Н0101</Code>
+		<Description>Наличие требований к программе по устойчивости функционирования при наличии ошибок во входных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>1</Id>
+		<Code>Н0102</Code>
+		<Description>Возможность обработки ошибочных ситуаций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>2</Id>
+		<Code>Н0103</Code>
+		<Description>Полнота обработки ошибочных ситуаций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>3</Id>
+		<Code>Н0104</Code>
+		<Description>Наличие тестов для проверки допустимых значений входных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>3</Id>
+		<Code>Н0105</Code>
+		<Description>Наличие системы контроля полноты входных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>4</Id>
+		<Code>Н0106</Code>
+		<Description>Наличие средств контроля корректности входных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>5</Id>
+		<Code>Н0107</Code>
+		<Description>Наличие средств контроля непротиворечивости входных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>4</Id>
+		<Code>Н0201</Code>
+		<Description>Наличие требований к программе по восстановлению процесса выполнения в случае сбоя операционной системы, процессора, внешних устройств</Description>
+	</Indicator>
+	<Indicator>
+		<Id>6</Id>
+		<Code>Н0202</Code>
+		<Description>Наличие требований к программе по восстановлению результатов при отказах процессора, ОС</Description>
+	</Indicator>
+	<Indicator>
+		<Id>7</Id>
+		<Code>Н0203</Code>
+		<Description>Наличие средств восстановления процесса в случае сбоев оборудования</Description>
+	</Indicator>
+	<Indicator>
+		<Id>8</Id>
+		<Code>Н0204</Code>
+		<Description>Наличие возможности разделения по времени выполнения отдельных функций программ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>5</Id>
+		<Code>Н0205</Code>
+		<Description>Наличие возможности повторного старта с точки останова</Description>
+	</Indicator>
+	<Indicator>
+		<Id>9</Id>
+		<Code>Н0108</Code>
+		<Description>Наличие проверки параметров и адресов по диапазону их значений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>10</Id>
+		<Code>Н0109</Code>
+		<Description>Наличие обработки граничных результатов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>11</Id>
+		<Code>Н0110</Code>
+		<Description>Наличие обработки неопределенностей (деление на 0, квадратный корень из отрицательного числа и т.д.)</Description>
+	</Indicator>
+	<Indicator>
+		<Id>6</Id>
+		<Code>Н0301</Code>
+		<Description>Наличие централизованного управления процессами, конкурирующими из-за ресурсов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>12</Id>
+		<Code>Н0302</Code>
+		<Description>Наличие возможности автоматически обходить ошибочные ситуации в процессе вычисления</Description>
+	</Indicator>
+	<Indicator>
+		<Id>13</Id>
+		<Code>Н0303</Code>
+		<Description>Наличие средств, обеспечивающих завершение процесса решения в случае помех</Description>
+	</Indicator>
+	<Indicator>
+		<Id>14</Id>
+		<Code>Н0304</Code>
+		<Description>Наличие средств, обеспечивающих выполнение программы в сокращенном объеме в случае ошибок или помех</Description>
+	</Indicator>
+	<Indicator>
+		<Id>7</Id>
+		<Code>Н0305</Code>
+		<Description>Показатель устойчивости к искажающим воздействиям</Description>
+	</Indicator>
+	<Indicator>
+		<Id>15</Id>
+		<Code>Н0401</Code>
+		<Description>Вероятность безотказной работы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>16</Id>
+		<Code>Н0501</Code>
+		<Description>Оценка по среднему времени восстановления</Description>
+	</Indicator>
+	<Indicator>
+		<Id>17</Id>
+		<Code>Н0502</Code>
+		<Description>Оценка по продолжительности преобразования входного набора данных в выходной</Description>
+	</Indicator>
+	<Indicator>
+		<Id>8</Id>
+		<Code>С0803</Code>
+		<Description>Наличие комментариев в точках входа и выхода программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>18</Id>
+		<Code>С0302</Code>
+		<Description>Оценка простоты программы по числу точек входа и выхода</Description>
+	</Indicator>
+	<Indicator>
+		<Id>19</Id>
+		<Code>С1002</Code>
+		<Description>Оценка простоты программы по числу переходов по условию</Description>
+	</Indicator>
+	<Indicator>
+		<Id>20</Id>
+		<Code>С0303</Code>
+		<Description>Осуществляется ли передача результатов работы модуля через вызывающий его модуль</Description>
+	</Indicator>
+	<Indicator>
+		<Id>9</Id>
+		<Code>С0304</Code>
+		<Description>Осуществляется ли контроль за правильностью данных, поступающих в вызывающий модуль от вызываемого</Description>
+	</Indicator>
+	<Indicator>
+		<Id>21</Id>
+		<Code>С0604</Code>
+		<Description>Оценка программы по числу циклов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>22</Id>
+		<Code>С0801</Code>
+		<Description>Наличие комментариев ко всем машинозависимым частям программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>23</Id>
+		<Code>С0802</Code>
+		<Description>Наличие комментариев к машинозависимым операторам программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>10</Id>
+		<Code>С0901</Code>
+		<Description>Соответствие комментариев принятым соглашениям</Description>
+	</Indicator>
+	<Indicator>
+		<Id>24</Id>
+		<Code>С1001</Code>
+		<Description>Используется ли язык высокого уровня</Description>
+	</Indicator>
+	<Indicator>
+		<Id>25</Id>
+		<Code>С0301</Code>
+		<Description>Наличие проверки корректности передаваемых данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>26</Id>
+		<Code>С0902</Code>
+		<Description>Наличие комментариев-заголовков программы с указанием ее структурных и функциональных характеристик</Description>
+	</Indicator>
+	<Indicator>
+		<Id>11</Id>
+		<Code>С0601</Code>
+		<Description>Использование при построении программ метода структурного программирования</Description>
+	</Indicator>
+	<Indicator>
+		<Id>27</Id>
+		<Code>С0602</Code>
+		<Description>Соблюдение принципа разработки программы сверху вниз</Description>
+	</Indicator>
+	<Indicator>
+		<Id>28</Id>
+		<Code>С0201</Code>
+		<Description>Наличие ограничений на размеры модуля</Description>
+	</Indicator>
+	<Indicator>
+		<Id>29</Id>
+		<Code>С0101</Code>
+		<Description>Наличие модульной схемы программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>12</Id>
+		<Code>С030</Code>
+		<Description>Наличие требований к независимости модулей программы от типов и форматов выходных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>30</Id>
+		<Code>С0102</Code>
+		<Description>Оценка программы по числу уникальных модулей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>31</Id>
+		<Code>С0903</Code>
+		<Description>Оценка ясности и точности описания последовательности функционирования всех элементов программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>32</Id>
+		<Code>С0603</Code>
+		<Description>Оценка программы по числу циклов с одним входом и одним выходом</Description>
+	</Indicator>
+	<Indicator>
+		<Id>13</Id>
+		<Code>У0101</Code>
+		<Description>Возможность освоения программных средств по документации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>33</Id>
+		<Code>У0102</Code>
+		<Description>Возможность освоения ПС на контрольном примере при помощи ЭВМ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>34</Id>
+		<Code>У0103</Code>
+		<Description>Возможность поэтапного освоения ПС</Description>
+	</Indicator>
+	<Indicator>
+		<Id>35</Id>
+		<Code>У0201</Code>
+		<Description>Полнота и понятность документации для освоения</Description>
+	</Indicator>
+	<Indicator>
+		<Id>14</Id>
+		<Code>У0202</Code>
+		<Description>Точность документации для освоения</Description>
+	</Indicator>
+	<Indicator>
+		<Id>36</Id>
+		<Code>У0203</Code>
+		<Description>Техническое исполнение документации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>37</Id>
+		<Code>У0301</Code>
+		<Description>Наличие краткой аннотации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>38</Id>
+		<Code>У0302</Code>
+		<Description>Наличие описания решаемых задач</Description>
+	</Indicator>
+	<Indicator>
+		<Id>15</Id>
+		<Code>У0303</Code>
+		<Description>Наличие описания структуры функций ПС</Description>
+	</Indicator>
+	<Indicator>
+		<Id>39</Id>
+		<Code>У0304</Code>
+		<Description>Наличие описания основных функций ПС</Description>
+	</Indicator>
+	<Indicator>
+		<Id>40</Id>
+		<Code>У0306</Code>
+		<Description>Наличие описания частных функций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>41</Id>
+		<Code>У0307</Code>
+		<Description>Наличие описания алгоритмов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>16</Id>
+		<Code>У0308</Code>
+		<Description>Наличие описания межмодульных интерфейсов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>42</Id>
+		<Code>У0309</Code>
+		<Description>Наличие описания пользовательских интерфейсов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>43</Id>
+		<Code>У0310</Code>
+		<Description>Наличие описания входных и выходных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>44</Id>
+		<Code>У0311</Code>
+		<Description>Наличие описания диагностических сообщений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>17</Id>
+		<Code>У0312</Code>
+		<Description>Наличие описания основных характеристик ПС</Description>
+	</Indicator>
+	<Indicator>
+		<Id>45</Id>
+		<Code>У0314</Code>
+		<Description>Наличие описания программной среды функционирования ПС</Description>
+	</Indicator>
+	<Indicator>
+		<Id>46</Id>
+		<Code>У0315</Code>
+		<Description>Достаточность документации для ввода ПС в эксплуатацию</Description>
+	</Indicator>
+	<Indicator>
+		<Id>47</Id>
+		<Code>У0316</Code>
+		<Description>Наличие информации технологии переноса для мобильных программ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>18</Id>
+		<Code>У0401</Code>
+		<Description>Соответствие оглавления содержанию документации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>48</Id>
+		<Code>У0402</Code>
+		<Description>Оценка оформления документации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>49</Id>
+		<Code>У0403</Code>
+		<Description>Грамматическая правильность изложения документации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>50</Id>
+		<Code>У0404</Code>
+		<Description>Отсутствие противоречий</Description>
+	</Indicator>
+	<Indicator>
+		<Id>19</Id>
+		<Code>У0405</Code>
+		<Description>Отсутствие неправильных ссылок</Description>
+	</Indicator>
+	<Indicator>
+		<Id>51</Id>
+		<Code>У0406</Code>
+		<Description>Ясность формулировок и описаний</Description>
+	</Indicator>
+	<Indicator>
+		<Id>52</Id>
+		<Code>У0407</Code>
+		<Description>Отсутствие неоднозначных формулировок и описаний</Description>
+	</Indicator>
+	<Indicator>
+		<Id>53</Id>
+		<Code>У0408</Code>
+		<Description>Правильность использования терминов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>20</Id>
+		<Code>У0409</Code>
+		<Description>Краткость, отсутствие лишней детализации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>54</Id>
+		<Code>У0410</Code>
+		<Description>Единство формулировок</Description>
+	</Indicator>
+	<Indicator>
+		<Id>55</Id>
+		<Code>У0411</Code>
+		<Description>Единство обозначений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>56</Id>
+		<Code>У0412</Code>
+		<Description>Отсутствие ненужных повторений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>21</Id>
+		<Code>У0413</Code>
+		<Description>Наличие нужных объяснений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>57</Id>
+		<Code>У0501</Code>
+		<Description>Оценка стиля изложения</Description>
+	</Indicator>
+	<Indicator>
+		<Id>58</Id>
+		<Code>У0502</Code>
+		<Description>Дидактическая разделенность</Description>
+	</Indicator>
+	<Indicator>
+		<Id>59</Id>
+		<Code>У0303</Code>
+		<Description>Формальная разделенность</Description>
+	</Indicator>
+	<Indicator>
+		<Id>22</Id>
+		<Code>У0504</Code>
+		<Description>Ясность логической структуры</Description>
+	</Indicator>
+	<Indicator>
+		<Id>60</Id>
+		<Code>У0505</Code>
+		<Description>Соблюдение стандартов и правил изложения в документации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>61</Id>
+		<Code>У0506</Code>
+		<Description>Оценка по числу ссылок вперед в тексте документов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>62</Id>
+		<Code>У0601</Code>
+		<Description>Наличие оглавления</Description>
+	</Indicator>
+	<Indicator>
+		<Id>23</Id>
+		<Code>У0602</Code>
+		<Description>Наличие предметного указателя</Description>
+	</Indicator>
+	<Indicator>
+		<Id>63</Id>
+		<Code>У0603</Code>
+		<Description>Наличие перекрестных ссылок</Description>
+	</Indicator>
+	<Indicator>
+		<Id>64</Id>
+		<Code>У0604</Code>
+		<Description>Наличие всех требуемых разделов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>65</Id>
+		<Code>У0605</Code>
+		<Description>Соблюдение непрерывности нумерации страниц документов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>24</Id>
+		<Code>У0606</Code>
+		<Description>Отсутствие незаконченных разделов абзацев, предложений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>66</Id>
+		<Code>У0607</Code>
+		<Description>Наличие всех рисунков, чертежей, формул, таблиц</Description>
+	</Indicator>
+	<Indicator>
+		<Id>67</Id>
+		<Code>У0608</Code>
+		<Description>Наличие всех строк и примечаний</Description>
+	</Indicator>
+	<Indicator>
+		<Id>68</Id>
+		<Code>У0609</Code>
+		<Description>Логический порядок частей внутри главы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>25</Id>
+		<Code>У0701</Code>
+		<Description>Наличие полного перечня документации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>69</Id>
+		<Code>У0801</Code>
+		<Description>Уровень языка общения пользователя с программой</Description>
+	</Indicator>
+	<Indicator>
+		<Id>70</Id>
+		<Code>У0802</Code>
+		<Description>Легкость и быстрота загрузки и запуска программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>71</Id>
+		<Code>У0803</Code>
+		<Description>Легкость и быстрота завершения работы программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>26</Id>
+		<Code>У0804</Code>
+		<Description>Возможность распечатки содержимого программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>72</Id>
+		<Code>У0805</Code>
+		<Description>Возможность приостанова и повторного запуска работы без потерь информации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>73</Id>
+		<Code>У0901</Code>
+		<Description>Соответствие меню требованиям пользователя</Description>
+	</Indicator>
+	<Indicator>
+		<Id>74</Id>
+		<Code>У0902</Code>
+		<Description>Возможность прямого перехода вверх и вниз по многоуровнему меню (пропуск уровней)</Description>
+	</Indicator>
+	<Indicator>
+		<Id>27</Id>
+		<Code>У1001</Code>
+		<Description>Возможность управления подробностью получаемых выходных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>75</Id>
+		<Code>У1002</Code>
+		<Description>Достаточность полученной информации для продолжения работы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>76</Id>
+		<Code>У1101</Code>
+		<Description>Обеспечение удобства ввода данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>77</Id>
+		<Code>У1102</Code>
+		<Description>Легкость восприятия</Description>
+	</Indicator>
+	<Indicator>
+		<Id>28</Id>
+		<Code>У1201</Code>
+		<Description>Обеспечение программой выполнения предусмотренных рабочих процедур</Description>
+	</Indicator>
+	<Indicator>
+		<Id>78</Id>
+		<Code>У1202</Code>
+		<Description>Достаточность информации, выдаваемой программой для составления дополнительных процедур</Description>
+	</Indicator>
+	<Indicator>
+		<Id>79</Id>
+		<Code>Э0101</Code>
+		<Description>Проблемно-ориентированные функции</Description>
+	</Indicator>
+	<Indicator>
+		<Id>80</Id>
+		<Code>Э0102</Code>
+		<Description>Машинно-ориентированные функции</Description>
+	</Indicator>
+	<Indicator>
+		<Id>29</Id>
+		<Code>Э0103</Code>
+		<Description>Функции ведения и управления</Description>
+	</Indicator>
+	<Indicator>
+		<Id>81</Id>
+		<Code>Э0104</Code>
+		<Description>Функции ввода/вывода</Description>
+	</Indicator>
+	<Indicator>
+		<Id>82</Id>
+		<Code>Э0105</Code>
+		<Description>Функции защиты и проверки данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>83</Id>
+		<Code>Э0106</Code>
+		<Description>Функции защиты от несанкционированного доступа</Description>
+	</Indicator>
+	<Indicator>
+		<Id>30</Id>
+		<Code>Э0107</Code>
+		<Description>Функции контроля доступа</Description>
+	</Indicator>
+	<Indicator>
+		<Id>84</Id>
+		<Code>Э0108</Code>
+		<Description>Функции защиты от внесения изменений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>85</Id>
+		<Code>Э0109</Code>
+		<Description>Наличие соответствующих границ функциональных областей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>86</Id>
+		<Code>Э0110</Code>
+		<Description>Число знаков после запятой в результатах вычислений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>31</Id>
+		<Code>Э0201</Code>
+		<Description>Время выполнения программ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>87</Id>
+		<Code>Э0202</Code>
+		<Description>Время реакции и ответов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>88</Id>
+		<Code>Э0203</Code>
+		<Description>Время подготовки</Description>
+	</Indicator>
+	<Indicator>
+		<Id>89</Id>
+		<Code>Э0205</Code>
+		<Description>Затраты времени на защиту данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>32</Id>
+		<Code>Э0206</Code>
+		<Description>Время компиляции</Description>
+	</Indicator>
+	<Indicator>
+		<Id>90</Id>
+		<Code>Э0301</Code>
+		<Description>Требуемый объем внутренней памяти</Description>
+	</Indicator>
+	<Indicator>
+		<Id>91</Id>
+		<Code>Э0302</Code>
+		<Description>Требуемый объем внешней памяти</Description>
+	</Indicator>
+	<Indicator>
+		<Id>92</Id>
+		<Code>Э0303</Code>
+		<Description>Требуемые периферийные устройства</Description>
+	</Indicator>
+	<Indicator>
+		<Id>33</Id>
+		<Code>Э0304</Code>
+		<Description>Требуемое базовое программное обеспечение</Description>
+	</Indicator>
+	<Indicator>
+		<Id>93</Id>
+		<Code>Г0101</Code>
+		<Description>Оценка числа потенциальных пользователей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>94</Id>
+		<Code>Г0102</Code>
+		<Description>Оценка числа функций ПС</Description>
+	</Indicator>
+	<Indicator>
+		<Id>95</Id>
+		<Code>Г0103</Code>
+		<Description>Насколько набор функций удовлетворяет требованиям пользователя</Description>
+	</Indicator>
+	<Indicator>
+		<Id>34</Id>
+		<Code>Г0104</Code>
+		<Description>Насколько возможности программ охватывают область решаемых пользователем задач</Description>
+	</Indicator>
+	<Indicator>
+		<Id>96</Id>
+		<Code>Г0105</Code>
+		<Description>Возможность настройки формата выходных данных для конкретных пользователей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>97</Id>
+		<Code>Г0201</Code>
+		<Description>Наличие схемы иерархии модулей программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>98</Id>
+		<Code>Г0202</Code>
+		<Description>Оценка независимости модулей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>35</Id>
+		<Code>Г0203</Code>
+		<Description>Оценка числа уникальных элементов/реквизитов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>99</Id>
+		<Code>Г0204</Code>
+		<Description>Используется ли в текущем вызове модуля информация, полученная в предыдущем вызове</Description>
+	</Indicator>
+	<Indicator>
+		<Id>100</Id>
+		<Code>Г0205</Code>
+		<Description>Оценка организации точек входа и выхода модуля</Description>
+	</Indicator>
+	<Indicator>
+		<Id>101</Id>
+		<Code>Г0206</Code>
+		<Description>Наличие описания атрибутов модуля</Description>
+	</Indicator>
+	<Indicator>
+		<Id>36</Id>
+		<Code>Г0301</Code>
+		<Description>Оценка программ по числу переходов и точек ветвления</Description>
+	</Indicator>
+	<Indicator>
+		<Id>102</Id>
+		<Code>Г0401</Code>
+		<Description>Использование метода пошагового уточнения</Description>
+	</Indicator>
+	<Indicator>
+		<Id>103</Id>
+		<Code>Г0402</Code>
+		<Description>Наличие описания структуры программ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>104</Id>
+		<Code>Г0403</Code>
+		<Description>Наличие описания связей между элементами структуры программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>37</Id>
+		<Code>Г0404</Code>
+		<Description>Наличие в программе повторного выполнения функций (подпрограмм)</Description>
+	</Indicator>
+	<Indicator>
+		<Id>105</Id>
+		<Code>Г0501</Code>
+		<Description>Использование стандартных протоколов связи</Description>
+	</Indicator>
+	<Indicator>
+		<Id>106</Id>
+		<Code>Г0601</Code>
+		<Description>Использование стандартных интерфейсных подпрограмм</Description>
+	</Indicator>
+	<Indicator>
+		<Id>107</Id>
+		<Code>Г0701</Code>
+		<Description>Оценка зависимости программ от емкости оперативной памяти ЭВМ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>38</Id>
+		<Code>Г0702</Code>
+		<Description>Оценка зависимости временных характеристик программы от скорости вычислений ЭВМ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>108</Id>
+		<Code>Г0703</Code>
+		<Description>Оценка зависимости функционирования программы от числа внешних запоминающих устройств и их общей емкости</Description>
+	</Indicator>
+	<Indicator>
+		<Id>109</Id>
+		<Code>Г0704</Code>
+		<Description>Оценка зависимости функционирования программы от специальных устройств ввода-вывода</Description>
+	</Indicator>
+	<Indicator>
+		<Id>110</Id>
+		<Code>Г0801</Code>
+		<Description>Применение специальных языков программирования</Description>
+	</Indicator>
+	<Indicator>
+		<Id>39</Id>
+		<Code>Г0802</Code>
+		<Description>Оценка зависимости программы от программ операционной системы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>111</Id>
+		<Code>Г0803</Code>
+		<Description>Зависимость от других программных средств</Description>
+	</Indicator>
+	<Indicator>
+		<Id>112</Id>
+		<Code>Г0901</Code>
+		<Description>Оценка локализации непереносимой части программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>113</Id>
+		<Code>Г1001</Code>
+		<Description>Оценка использования отрицательных или булевых выражений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>40</Id>
+		<Code>Г1002</Code>
+		<Description>Оценка программы по использованию условных переходов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>114</Id>
+		<Code>Г1003</Code>
+		<Description>Оценка программы по использованию безусловных переходов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>115</Id>
+		<Code>Г1004</Code>
+		<Description>Оформление процедур входа и выхода из циклов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>116</Id>
+		<Code>Г1005</Code>
+		<Description>Ограничения на модификацию переменной индексации в цикле</Description>
+	</Indicator>
+	<Indicator>
+		<Id>41</Id>
+		<Code>Г1007</Code>
+		<Description>Оценка программы по использованию локальных переменных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>117</Id>
+		<Code>Г1006</Code>
+		<Description>Оценка модулей по направлению потока управления</Description>
+	</Indicator>
+	<Indicator>
+		<Id>118</Id>
+		<Code>Г1101</Code>
+		<Description>Оценка программы по числу комментариев</Description>
+	</Indicator>
+	<Indicator>
+		<Id>119</Id>
+		<Code>Г1201</Code>
+		<Description>Наличие заголовка в программе</Description>
+	</Indicator>
+	<Indicator>
+		<Id>42</Id>
+		<Code>Г1202</Code>
+		<Description>Комментарии к точкам ветвлений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>120</Id>
+		<Code>Г1203</Code>
+		<Description>Комментарии к машинозависимым частям программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>121</Id>
+		<Code>Г1204</Code>
+		<Description>Комментарии к машинозависимым операторам программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>122</Id>
+		<Code>Г1205</Code>
+		<Description>Комментарии к операторам объявления переменных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>43</Id>
+		<Code>Г1206</Code>
+		<Description>Оценка семантики операторов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>123</Id>
+		<Code>Г1207</Code>
+		<Description>Наличие соглашений по форме представления комментариев</Description>
+	</Indicator>
+	<Indicator>
+		<Id>124</Id>
+		<Code>Г1208</Code>
+		<Description>Наличие общих комментариев к программам</Description>
+	</Indicator>
+	<Indicator>
+		<Id>125</Id>
+		<Code>Г1301</Code>
+		<Description>Использование языков высокого уровня</Description>
+	</Indicator>
+	<Indicator>
+		<Id>44</Id>
+		<Code>Г1302</Code>
+		<Description>Семантика имен используемых переменных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>126</Id>
+		<Code>Г1303</Code>
+		<Description>Использование отступов, сдвигов и пропусков при формировании текста</Description>
+	</Indicator>
+	<Indicator>
+		<Id>127</Id>
+		<Code>Г1304</Code>
+		<Description>Размещение операторов по строкам</Description>
+	</Indicator>
+	<Indicator>
+		<Id>128</Id>
+		<Code>Г1401</Code>
+		<Description>Передача информации для управления по параметрам</Description>
+	</Indicator>
+	<Indicator>
+		<Id>45</Id>
+		<Code>Г1402</Code>
+		<Description>Параметрическая передача входных данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>129</Id>
+		<Code>Г1403</Code>
+		<Description>Наличие передачи результатов работы между модулями</Description>
+	</Indicator>
+	<Indicator>
+		<Id>130</Id>
+		<Code>Г1404</Code>
+		<Description>Наличие проверки правильности данных, получаемых модулями от вызываемого модуля</Description>
+	</Indicator>
+	<Indicator>
+		<Id>131</Id>
+		<Code>Г1405</Code>
+		<Description>Использование общих областей памяти</Description>
+	</Indicator>
+	<Indicator>
+		<Id>46</Id>
+		<Code>К0101</Code>
+		<Description>Наличие всех необходимых документов для понимания и использования ПС</Description>
+	</Indicator>
+	<Indicator>
+		<Id>132</Id>
+		<Code>К0102</Code>
+		<Description>Наличие описания и схемы иерархии модулей программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>133</Id>
+		<Code>К0103</Code>
+		<Description>Наличие описания основных функций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>134</Id>
+		<Code>К0104</Code>
+		<Description>Наличие описания частных функций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>47</Id>
+		<Code>К0105</Code>
+		<Description>Наличие описания данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>135</Id>
+		<Code>К0106</Code>
+		<Description>Наличие описания алгоритмов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>136</Id>
+		<Code>К0107</Code>
+		<Description>Наличие описания интерфейсов между модулями</Description>
+	</Indicator>
+	<Indicator>
+		<Id>137</Id>
+		<Code>К0108</Code>
+		<Description>Наличие описания интерфейсов с пользователями</Description>
+	</Indicator>
+	<Indicator>
+		<Id>48</Id>
+		<Code>К0109</Code>
+		<Description>Наличие описания используемых числовых методов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>138</Id>
+		<Code>К0110</Code>
+		<Description>Указаны ли все численные методы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>139</Id>
+		<Code>К0111</Code>
+		<Description>Наличие описания всех параметров</Description>
+	</Indicator>
+	<Indicator>
+		<Id>140</Id>
+		<Code>К0112</Code>
+		<Description>Наличие описания методов настройки системы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>49</Id>
+		<Code>К0113</Code>
+		<Description>Наличие описания всех диагностических сообщений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>141</Id>
+		<Code>К0114</Code>
+		<Description>Наличие описания способов проверки работоспособности программы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>142</Id>
+		<Code>К0201</Code>
+		<Description>Реализация всех исходных модулей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>143</Id>
+		<Code>К0202</Code>
+		<Description>Реализация всех основных функций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>50</Id>
+		<Code>К0203</Code>
+		<Description>Реализация всех частных функций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>144</Id>
+		<Code>К0204</Code>
+		<Description>Реализация всех алгоритмов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>145</Id>
+		<Code>К0205</Code>
+		<Description>Реализация всех взаимосвязей в системе</Description>
+	</Indicator>
+	<Indicator>
+		<Id>146</Id>
+		<Code>К0206</Code>
+		<Description>Реализация всех интерфейсов между модулями</Description>
+	</Indicator>
+	<Indicator>
+		<Id>51</Id>
+		<Code>К0207</Code>
+		<Description>Реализация возможности настройки системы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>147</Id>
+		<Code>К0208</Code>
+		<Description>Реализация диагностики всех граничных и аварийных ситуаций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>148</Id>
+		<Code>К0209</Code>
+		<Description>Наличие определения всех данных (переменные, индексы, массивы и проч.)</Description>
+	</Indicator>
+	<Indicator>
+		<Id>149</Id>
+		<Code>К0210</Code>
+		<Description>Наличие интерфейсов с пользователем</Description>
+	</Indicator>
+	<Indicator>
+		<Id>52</Id>
+		<Code>К0301</Code>
+		<Description>Отсутствие противоречий в описании частных функций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>150</Id>
+		<Code>К0302</Code>
+		<Description>Отсутствие противоречий в описании основных функций в разных документах</Description>
+	</Indicator>
+	<Indicator>
+		<Id>151</Id>
+		<Code>К0303</Code>
+		<Description>Отсутствие противоречий в описании алгоритмов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>152</Id>
+		<Code>К0304</Code>
+		<Description>Отсутствие противоречий в описании взаимосвязей в системе</Description>
+	</Indicator>
+	<Indicator>
+		<Id>53</Id>
+		<Code>К0305</Code>
+		<Description>Отсутствие противоречий в описании интерфейсов между модулями</Description>
+	</Indicator>
+	<Indicator>
+		<Id>153</Id>
+		<Code>К0306</Code>
+		<Description>Отсутствие противоречий в описании интерфейсов с пользователем</Description>
+	</Indicator>
+	<Indicator>
+		<Id>154</Id>
+		<Code>К0307</Code>
+		<Description>Отсутствие противоречий в описании настройки системы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>155</Id>
+		<Code>К0309</Code>
+		<Description>Отсутствие противоречий в описании иерархической структуры сообщений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>54</Id>
+		<Code>К0310</Code>
+		<Description>Отсутствие противоречий в описании диагностических сообщений</Description>
+	</Indicator>
+	<Indicator>
+		<Id>156</Id>
+		<Code>К0311</Code>
+		<Description>Отсутствие противоречий в описании данных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>157</Id>
+		<Code>К0401</Code>
+		<Description>Отсутствие противоречий в выполнении основных функций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>158</Id>
+		<Code>К0402</Code>
+		<Description>Отсутствие противоречий в выполнении частных функций</Description>
+	</Indicator>
+	<Indicator>
+		<Id>55</Id>
+		<Code>К0403</Code>
+		<Description>Отсутствие противоречий в выполнении алгоритмов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>159</Id>
+		<Code>К0404</Code>
+		<Description>Правильность взаимосвязей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>160</Id>
+		<Code>К0405</Code>
+		<Description>Правильность реализации интерфейса между модулями</Description>
+	</Indicator>
+	<Indicator>
+		<Id>161</Id>
+		<Code>К0406</Code>
+		<Description>Правильность реализации интерфейса с пользователем</Description>
+	</Indicator>
+	<Indicator>
+		<Id>56</Id>
+		<Code>К0407</Code>
+		<Description>Отсутствие противоречий в настройке системы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>162</Id>
+		<Code>К0408</Code>
+		<Description>Отсутствие противоречий в диагностике системы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>163</Id>
+		<Code>К0409</Code>
+		<Description>Отсутствие противоречий в общих переменных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>164</Id>
+		<Code>К0501</Code>
+		<Description>Единообразие способов вызова модулей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>57</Id>
+		<Code>К0502</Code>
+		<Description>Единообразие процедур возврата управления из модулей</Description>
+	</Indicator>
+	<Indicator>
+		<Id>165</Id>
+		<Code>К0503</Code>
+		<Description>Единообразие способов сохранения информации для возврата</Description>
+	</Indicator>
+	<Indicator>
+		<Id>166</Id>
+		<Code>К0504</Code>
+		<Description>Единообразие способов восстановления информации для возврата</Description>
+	</Indicator>
+	<Indicator>
+		<Id>167</Id>
+		<Code>К0505</Code>
+		<Description>Единообразие организации списков передаваемых параметров</Description>
+	</Indicator>
+	<Indicator>
+		<Id>58</Id>
+		<Code>К0601</Code>
+		<Description>Единообразие наименования каждой переменной и константы</Description>
+	</Indicator>
+	<Indicator>
+		<Id>168</Id>
+		<Code>К0602</Code>
+		<Description>Все ли одинаковые константы встречаются во всех программах под одинаковыми именами</Description>
+	</Indicator>
+	<Indicator>
+		<Id>169</Id>
+		<Code>К0603</Code>
+		<Description>Единообразие определения внешних данных во всех программах</Description>
+	</Indicator>
+	<Indicator>
+		<Id>170</Id>
+		<Code>К0604</Code>
+		<Description>Используются ли разные идентификаторы для разных переменных</Description>
+	</Indicator>
+	<Indicator>
+		<Id>59</Id>
+		<Code>К0605</Code>
+		<Description>Все ли общие переменные объявлены как общие переменные</Description>
+	</Indicator>
+	<Indicator>
+		<Id>171</Id>
+		<Code>К0606</Code>
+		<Description>Наличие определений одинаковых атрибутов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>172</Id>
+		<Code>К0701</Code>
+		<Description>Комплектность документации в соответствии со стандартами</Description>
+	</Indicator>
+	<Indicator>
+		<Id>173</Id>
+		<Code>К0702</Code>
+		<Description>Правильное оформление частей документов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>60</Id>
+		<Code>К0703</Code>
+		<Description>Правильное оформление титульных и заглавных листов документов</Description>
+	</Indicator>
+	<Indicator>
+		<Id>174</Id>
+		<Code>К0704</Code>
+		<Description>Наличие в документах всех разделов в соответствии со стандартами</Description>
+	</Indicator>
+	<Indicator>
+		<Id>175</Id>
+		<Code>К0705</Code>
+		<Description>Полнота содержания разделов в соответствии со стандартами</Description>
+	</Indicator>
+	<Indicator>
+		<Id>176</Id>
+		<Code>К0706</Code>
+		<Description>Деление документов на структурные элементы: разделы, подразделы, пункты, подпункты</Description>
+	</Indicator>
+	<Indicator>
+		<Id>61</Id>
+		<Code>К0801</Code>
+		<Description>Соответствие организации и вычислительного процесса эксплуатационной документации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>177</Id>
+		<Code>К0802</Code>
+		<Description>Правильность заданий на выполнение программы, правильность написания управляющих и операторов (отсутствие ошибок)</Description>
+	</Indicator>
+	<Indicator>
+		<Id>178</Id>
+		<Code>К0803</Code>
+		<Description>Отсутствие ошибок в описании действий пользователя</Description>
+	</Indicator>
+	<Indicator>
+		<Id>179</Id>
+		<Code>К0804</Code>
+		<Description>Отсутствие ошибок в описании запуска</Description>
+	</Indicator>
+	<Indicator>
+		<Id>62</Id>
+		<Code>К0805</Code>
+		<Description>Отсутствие ошибок в описании генерации</Description>
+	</Indicator>
+	<Indicator>
+		<Id>180</Id>
+		<Code>К0806</Code>
+		<Description>Отсутствие ошибок в описании настройки</Description>
+	</Indicator>
+	<Indicator>
+		<Id>181</Id>
+		<Code>К1001</Code>
+		<Description>Наличие требований к тестированию программ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>182</Id>
+		<Code>К1002</Code>
+		<Description>Достаточность требований к тестированию программ</Description>
+	</Indicator>
+	<Indicator>
+		<Id>63</Id>
+		<Code>К1003</Code>
+		<Description>Отношение числа модулей, отработавших в процессе тестирования и отладки (Qтм) к общему числу модулей (Qом)</Description>
+	</Indicator>
+	<Indicator>
+		<Id>183</Id>
+		<Code>К1004</Code>
+		<Description>Отношение числа логических блоков, отработавших в процессе тестирования и отладки (Qтб), к общему числу логических блоков в программе (Qоб)</Description>
+	</Indicator>
+</ArrayOfIndicator>
