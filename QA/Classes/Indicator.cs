@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace QA.Classes
 {
-    [Serializable]
-    public class SoftwareTool
+    public class Indicator
     {
         public int Id { get; set; }
 
-        public int IdGOST { get; set; }
+        public int Priority { get; set; }
+
+        public string Code { get; set; }
 
         public string Description { get; set; }
 
-        public SoftwareTool()
-        {
+        public int IdMethod { get; set; }
 
-        }
+        public float Value { get; set; }
+
+        public Indicator() { }
     }
 }

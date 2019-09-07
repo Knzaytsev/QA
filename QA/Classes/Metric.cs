@@ -6,18 +6,16 @@ using System.Threading.Tasks;
 
 namespace QA.Classes
 {
-    [Serializable]
-    public class SoftwareTool
+    public class Metric
     {
         public int Id { get; set; }
 
-        public int IdGOST { get; set; }
+        public int CriteriaId { get; set; }
 
-        public string Description { get; set; }
+        public int PhaseId { get; set; }
 
-        public SoftwareTool()
-        {
+        public string Metrics { get; set; }
 
-        }
+        public Metric() { }
     }
 }

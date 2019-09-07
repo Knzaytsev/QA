@@ -46,9 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Indicator.cs" />
     <Compile Include="Classes\Criteria.cs" />
+    <Compile Include="Classes\Metric.cs" />
     <Compile Include="Classes\Phase.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
+    <Compile Include="Evaluation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluation.Designer.cs">
+      <DependentUpon>Evaluation.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interactors\FileUser.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -68,6 +76,9 @@
     <Compile Include="Stages.Designer.cs">
       <DependentUpon>Stages.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Evaluation.resx">
+      <DependentUpon>Evaluation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -99,6 +110,7 @@
   <ItemGroup />
   <ItemGroup>
     <Content Include="Data\Criteria.xml" />
+    <Content Include="Data\Indicators.xml" />
     <Content Include="Data\LifeCyclePhases.xml" />
     <Content Include="Data\Metrics.xml" />
     <Content Include="Data\SoftwareTools.xml" />
