@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.CharsListDGV = new System.Windows.Forms.DataGridView();
+            this.Compute = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Наименование = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Оценка = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Compute = new System.Windows.Forms.Button();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CharsListDGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,12 +44,22 @@
             this.CharsListDGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
             this.Code,
-            this.Наименование,
-            this.Оценка});
+            this.Description,
+            this.Value});
             this.CharsListDGV.Location = new System.Drawing.Point(0, 0);
             this.CharsListDGV.Name = "CharsListDGV";
-            this.CharsListDGV.Size = new System.Drawing.Size(378, 150);
+            this.CharsListDGV.Size = new System.Drawing.Size(577, 354);
             this.CharsListDGV.TabIndex = 0;
+            // 
+            // Compute
+            // 
+            this.Compute.Location = new System.Drawing.Point(583, 12);
+            this.Compute.Name = "Compute";
+            this.Compute.Size = new System.Drawing.Size(75, 23);
+            this.Compute.TabIndex = 1;
+            this.Compute.Text = "Вычислить";
+            this.Compute.UseVisualStyleBackColor = true;
+            this.Compute.Click += new System.EventHandler(this.Compute_Click);
             // 
             // Id
             // 
@@ -62,32 +73,33 @@
             this.Code.Name = "Code";
             this.Code.ReadOnly = true;
             // 
-            // Наименование
+            // Description
             // 
-            this.Наименование.HeaderText = "NameChar";
-            this.Наименование.Name = "Наименование";
-            this.Наименование.ReadOnly = true;
+            this.Description.HeaderText = "Наименование";
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
             // 
-            // Оценка
+            // Value
             // 
-            this.Оценка.HeaderText = "Value";
-            this.Оценка.Name = "Оценка";
+            this.Value.HeaderText = "Оценка";
+            this.Value.Name = "Value";
             // 
-            // Compute
+            // back
             // 
-            this.Compute.Location = new System.Drawing.Point(384, 12);
-            this.Compute.Name = "Compute";
-            this.Compute.Size = new System.Drawing.Size(75, 23);
-            this.Compute.TabIndex = 1;
-            this.Compute.Text = "Вычислить";
-            this.Compute.UseVisualStyleBackColor = true;
-            this.Compute.Click += new System.EventHandler(this.Compute_Click);
+            this.back.Location = new System.Drawing.Point(664, 12);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(75, 23);
+            this.back.TabIndex = 2;
+            this.back.Text = "Назад";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.Back_Click);
             // 
             // Evaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.Compute);
             this.Controls.Add(this.CharsListDGV);
             this.Name = "Evaluation";
@@ -104,7 +116,8 @@
         private System.Windows.Forms.Button Compute;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id;
         private System.Windows.Forms.DataGridViewTextBoxColumn Code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Наименование;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Оценка;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Value;
+        private System.Windows.Forms.Button back;
     }
 }

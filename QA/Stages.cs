@@ -118,12 +118,16 @@ namespace QA
 
         private void ChoosePhase_Click(object sender, EventArgs e)
         {
-            IndicatorsFilter.FilterIndicators();
+            Evaluation form = new Evaluation(IndicatorsFilter.FilterIndicators());
+            form.Show();
+            this.Close();
         }
 
         private void Back_Click(object sender, EventArgs e)
         {
-
+            MainForm form = (MainForm)Form.ActiveForm;
+            form.Show();
+            this.Close();
         }
     }
 }
