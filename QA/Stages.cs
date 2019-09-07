@@ -15,7 +15,7 @@ namespace QA
 {
     public partial class Stages : Form
     {
-        string LCPhasesPath = @"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\LifeCyclePhases.xml";
+        string LCPhasesPath = @"..\..\Data\LifeCyclePhases.xml";
         public Stages()
         {
             InitializeComponent();
