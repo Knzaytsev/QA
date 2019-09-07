@@ -16,8 +16,8 @@ namespace QA
 {
     public partial class MainForm : Form
     {
-        string STsPath = @"..\..\Data\SoftwareTools.xml";//@"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\SoftwareTools.xml";
-        string STandCM = @"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\SoftwareToolsAndCritariaMatrix.txt";
+        string STsPath = @"..\..\Data\SoftwareTools.xml";
+        string STandCM = @"..\..\Data\SoftwareToolsAndCritariaMatrix.txt";
         public MainForm()
         {
             InitializeComponent();
