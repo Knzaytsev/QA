@@ -35,6 +35,7 @@ namespace QA.Filters
             for (int i = 0; i < priorities.Length; ++i)
             {
                 int priority = priorities[i];
+                if (priority == -1) { continue; }
                 var temp = metrics.Where(x => x.CriteriaId == i);
                 foreach (Metric metric in temp)
                 {

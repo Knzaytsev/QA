@@ -61,6 +61,7 @@
       <DependentUpon>Evaluation.cs</DependentUpon>
     </Compile>
     <Compile Include="Filters\IndicatorsFilter.cs" />
+    <Compile Include="Repositories\CriteriasRepository.cs" />
     <Compile Include="Interactors\FileUser.cs" />
     <Compile Include="Interactors\GetCriteriaMatrix.cs" />
     <Compile Include="Interactors\GetCriterias.cs" />

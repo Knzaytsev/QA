@@ -20,8 +20,7 @@ namespace QA
         {
             InitializeComponent();
         }
-
-
+        
         private void OSradioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton radioButton = (RadioButton)sender;
@@ -160,6 +159,7 @@ namespace QA
             SoftwareTool softwareTool = (SoftwareTool)fileUser.getElementById(id);
 
             fileUser = new FileUser(Properties.Settings.Default.Matrix, new CriteriaMatrixRepository());
+            DataSingleton.GetInstance(id, true);
             DataSingleton.GetInstance((int[])fileUser.getElementById(softwareTool.Id));
         }
 
