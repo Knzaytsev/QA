@@ -15,8 +15,8 @@ namespace QA
 {
     public partial class MainForm : Form
     {
-        string STsPath = @"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\SoftwareTools.xml";
-        string STandCM = @"C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\Data\SoftwareToolsAndCritariaMatrix.txt";
+        string STsPath = @"..\..\Data\SoftwareTools.xml";
+        string STandCM = @"..\..\Data\SoftwareToolsAndCritariaMatrix.txt";
         public MainForm()
         {
             InitializeComponent();
@@ -30,7 +30,7 @@ namespace QA
             if(radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -41,7 +41,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -52,7 +52,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -63,7 +63,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -74,7 +74,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -85,7 +85,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -96,7 +96,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -107,7 +107,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -118,7 +118,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -129,7 +129,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -140,7 +140,7 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
@@ -151,17 +151,17 @@ namespace QA
             if (radioButton.Checked == true)
             {
                 int id = int.Parse((string)radioButton.Tag);
-                int[] filteredCriteria = GetFilteredCriteria(id);
+                GetFilteredCriteria(id);
             }
         }
 
-        private int[] GetFilteredCriteria(int id)
+        private void GetFilteredCriteria(int id)
         {
             FileUser fileUser = new FileUser(STsPath, new SoftwareToolRepository());
             SoftwareTool softwareTool = (SoftwareTool)fileUser.getElementById(id);
 
             fileUser = new FileUser(STandCM, new CriteriaMatrixRepository());
-            return (int[])fileUser.getElementById(softwareTool.Id);
+            DataSingleton.GetInstance((int[])fileUser.getElementById(softwareTool.Id));
         }
 
         private void ChooseClass_Click(object sender, EventArgs e)
