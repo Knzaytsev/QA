@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace QA.Classes
 {
-    [Serializable]
-    public class Criteria
+    public class Indicator
     {
         public int Id { get; set; }
 
-        public string Factor { get; set; }
+        public int Priority { get; set; }
 
-        public string Mark { get; set; }
+        public string Code { get; set; }
 
         public string Description { get; set; }
 
-        public Criteria()
-        {
+        public int IdMethod { get; set; }
 
-        }
+        public float Value { get; set; }
+
+        public Indicator() { }
     }
 }

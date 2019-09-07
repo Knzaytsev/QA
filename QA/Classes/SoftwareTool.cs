@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QA.Classes
 {
+    [Serializable]
     public class SoftwareTool
     {
         public int Id { get; set; }
@@ -14,6 +15,9 @@ namespace QA.Classes
 
         public string Description { get; set; }
 
-        public SoftwareTool() { }
+        public SoftwareTool()
+        {
+
+        }
     }
 }

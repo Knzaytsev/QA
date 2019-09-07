@@ -46,30 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Indicator.cs" />
     <Compile Include="Classes\Criteria.cs" />
     <Compile Include="Classes\Metric.cs" />
     <Compile Include="Classes\Phase.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
-    <Compile Include="DataSingleton.cs" />
-    <Compile Include="Interactors\FileUser.cs" />
-    <Compile Include="Interactors\GetMetrics.cs" />
-    <Compile Include="Interactors\GetCriteriaMatrix.cs" />
-    <Compile Include="Interactors\GetCriterias.cs" />
-    <Compile Include="Interactors\GetSoftwareTools.cs" />
-    <Compile Include="Interactors\IGetItems.cs" />
-    <Compile Include="MetricsFilter.cs" />
-    <Compile Include="Repositories\IGetAllElements.cs" />
-    <Compile Include="Repositories\MetricRepository.cs" />
-    <Compile Include="Stages.cs">
+    <Compile Include="Evaluation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stages.Designer.cs">
-      <DependentUpon>Stages.cs</DependentUpon>
+    <Compile Include="Evaluation.Designer.cs">
+      <DependentUpon>Evaluation.cs</DependentUpon>
     </Compile>
-    <Compile Include="Repositories\CriteriaMatrixRepository.cs" />
-    <Compile Include="Repositories\IGetElement.cs" />
-    <Compile Include="Repositories\LifeCyclePhaseRepository.cs" />
-    <Compile Include="Repositories\SoftwareToolRepository.cs" />
+    <Compile Include="Interactors\FileUser.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,11 +66,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\CriteriaMatrixRepository.cs" />
+    <Compile Include="Repositories\IGetElement.cs" />
+    <Compile Include="Repositories\LifeCyclePhaseRepository.cs" />
+    <Compile Include="Repositories\SoftwareToolRepository.cs" />
+    <Compile Include="Stages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stages.Designer.cs">
+      <DependentUpon>Stages.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Evaluation.resx">
+      <DependentUpon>Evaluation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Stages.resx">
-      <DependentUpon>Stages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -93,6 +91,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Stages.resx">
+      <DependentUpon>Stages.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
