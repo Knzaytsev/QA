@@ -7,7 +7,7 @@ using QA.Repositories;
 
 namespace QA.Interactors
 {
-    class GetMetrics : IGet
+    class GetIndicators : IGet
     {
         private string path;
 
@@ -25,7 +25,7 @@ namespace QA.Interactors
             set { getElement = value; }
         }
 
-        public GetMetrics(string path, IGetElement getElement)
+        public GetIndicators(string path, IGetElement getElement)
         {
             this.path = path;
             this.getElement = getElement;
