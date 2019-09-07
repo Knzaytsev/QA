@@ -29,17 +29,19 @@
         private void InitializeComponent()
         {
             this.CharsListDGV = new System.Windows.Forms.DataGridView();
-            this.Compute = new System.Windows.Forms.Button();
             this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Compute = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CharsListDGV)).BeginInit();
             this.SuspendLayout();
             // 
             // CharsListDGV
             // 
+            this.CharsListDGV.AllowUserToAddRows = false;
+            this.CharsListDGV.AllowUserToDeleteRows = false;
             this.CharsListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CharsListDGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -50,16 +52,6 @@
             this.CharsListDGV.Name = "CharsListDGV";
             this.CharsListDGV.Size = new System.Drawing.Size(577, 354);
             this.CharsListDGV.TabIndex = 0;
-            // 
-            // Compute
-            // 
-            this.Compute.Location = new System.Drawing.Point(583, 12);
-            this.Compute.Name = "Compute";
-            this.Compute.Size = new System.Drawing.Size(75, 23);
-            this.Compute.TabIndex = 1;
-            this.Compute.Text = "Вычислить";
-            this.Compute.UseVisualStyleBackColor = true;
-            this.Compute.Click += new System.EventHandler(this.Compute_Click);
             // 
             // Id
             // 
@@ -83,6 +75,16 @@
             // 
             this.Value.HeaderText = "Оценка";
             this.Value.Name = "Value";
+            // 
+            // Compute
+            // 
+            this.Compute.Location = new System.Drawing.Point(583, 12);
+            this.Compute.Name = "Compute";
+            this.Compute.Size = new System.Drawing.Size(75, 23);
+            this.Compute.TabIndex = 1;
+            this.Compute.Text = "Вычислить";
+            this.Compute.UseVisualStyleBackColor = true;
+            this.Compute.Click += new System.EventHandler(this.Compute_Click);
             // 
             // back
             // 

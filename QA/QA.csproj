@@ -46,10 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculateResult.cs" />
     <Compile Include="Classes\Indicator.cs" />
     <Compile Include="Classes\Criteria.cs" />
     <Compile Include="Classes\Metric.cs" />
     <Compile Include="Classes\Phase.cs" />
+    <Compile Include="Classes\Result.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
     <Compile Include="DataSingleton.cs" />
     <Compile Include="Evaluation.cs">
@@ -77,6 +79,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CriteriaMatrixRepository.cs" />
+    <Compile Include="Repositories\CriteriasRepository.cs" />
     <Compile Include="Repositories\IndicatorsRepository.cs" />
     <Compile Include="Repositories\IGetAllElements.cs" />
     <Compile Include="Repositories\IGetElement.cs" />
