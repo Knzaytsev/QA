@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QA.Filters;
 
 namespace QA
 {
@@ -117,7 +118,7 @@ namespace QA
 
         private void ChoosePhase_Click(object sender, EventArgs e)
         {
-            MetricsFilter.FilterMetrics();
+            IndicatorsFilter.FilterIndicators();
         }
 
         private void Back_Click(object sender, EventArgs e)
