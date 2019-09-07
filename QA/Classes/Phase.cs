@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 namespace QA.Classes
 {
     [Serializable]
-    class SoftwareTool
+    class Phase
     {
         public int Id { get; set; }
 
-        public int IdGOST { get; set; }
+        public string Name { get; set; }
 
-        public string Description { get; set; }
+        public string Step { get; set; }
 
-        public SoftwareTool()
+        public string Result { get; set; }
+
+        public Phase()
         {
 
         }

@@ -3,55 +3,55 @@
 	<Phase>
 		<Id>0</Id>
 		<Name>Анализ</Name>
-		<Subphase>—</Subphase>
+		<Step>—</Step>
 		<Result>Определение требований. Спецификация требований. Техническое задание</Result>
 	</Phase>
 	<Phase>
 		<Id>1</Id>
 		<Name>Проектирование</Name>
-		<Subphase>Логическое проектирование</Subphase>
+		<Step>Логическое проектирование</Step>
 		<Result>Логический проект (функциональный проект). Программно-технический проект: системы, программ, модулей, документации</Result>
 	</Phase>
 	<Phase>
 		<Id>2</Id>
 		<Name>Реализация</Name>
-		<Subphase>—</Subphase>
+		<Step>—</Step>
 		<Result>Модули. Программы. Система. Средства тестирования. Дополняющая документация</Result>
 	</Phase>
 	<Phase>
 		<Id>3</Id>
 		<Name>Тестирование</Name>
-		<Subphase>—</Subphase>
+		<Step>—</Step>
 		<Result>Тестирование модуля, программы системы, дополняющая документация. Сдача в фонд (при необходимости)</Result>
 	</Phase>
 	<Phase>
 		<Id>4</Id>
 		<Name>Изготовление</Name>
-		<Subphase>Выпуск</Subphase>
+		<Step>Выпуск</Step>
 		<Result>Программное средство в форме, готовой для поставки. Документация. Правила внесения изменений</Result>
 	</Phase>
 	<Phase>
 		<Id>5</Id>
 		<Name>Изготовление</Name>
-		<Subphase>Испытания</Subphase>
+		<Step>Испытания</Step>
 		<Result>Установленное ПС. Организация применения. Отчет об испытаниях. Отзыв пользователя</Result>
 	</Phase>
 	<Phase>
 		<Id>6</Id>
 		<Name>Внедрение</Name>
-		<Subphase>—</Subphase>
+		<Step>—</Step>
 		<Result>Подтверждающее стабильной эксплуатации. Предоставление набора услуг по внедрению</Result>
 	</Phase>
 	<Phase>
 		<Id>7</Id>
 		<Name>Эксплуатация</Name>
-		<Subphase>—</Subphase>
+		<Step>—</Step>
 		<Result>Предложения об усовершенствовании. Сообщение о функциональных отклонениях</Result>
 	</Phase>
 	<Phase>
 		<Id>8</Id>
 		<Name>Обслуживание (сопровождение)</Name>
-		<Subphase>—</Subphase>
+		<Step>—</Step>
 		<Result>Информация о сопровождении программ. Измененное ПС</Result>
 	</Phase>
 </ArrayOfPhase>

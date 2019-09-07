@@ -7,15 +7,17 @@ using System.Threading.Tasks;
 namespace QA.Classes
 {
     [Serializable]
-    class SoftwareTool
+    class Criteria
     {
         public int Id { get; set; }
 
-        public int IdGOST { get; set; }
+        public string Factor { get; set; }
+
+        public string Mark { get; set; }
 
         public string Description { get; set; }
 
-        public SoftwareTool()
+        public Criteria()
         {
 
         }
