@@ -9,21 +9,20 @@ using QA.Repositories;
 
 namespace QA.Filters
 {
-    public static class IndicatorsFilter
+    public class IndicatorsFilter
     {
-        private static string IndicatorsPath = @"..\..\Data\Indicators.xml";
-
-        public static Indicator[] FilterIndicators()
+        public Indicator[] FilterIndicators()
         {
-            FileUser fileUser = new FileUser(IndicatorsPath, new IndicatorsRepository());
+            FileUser fileUser = new FileUser(Properties.Settings.Default.Indicators, new IndicatorsRepository());
             Indicator[] indicators = (Indicator[])fileUser.getElements();
 
-            Metric[] metrics = MetricsFilter.FilterMetrics();
+            MetricsFilter metricsFilter = new MetricsFilter();
+            Metric[] metrics = metricsFilter.FilterMetrics();
             indicators = SetPriority(indicators, metrics);
             return indicators;
         }
 
-        private static Indicator[] SetPriority(Indicator[] indicators, Metric[] metrics)
+        private Indicator[] SetPriority(Indicator[] indicators, Metric[] metrics)
         {
             string[] indicatorsGroups;
             List<Indicator> neededIndicators = new List<Indicator>();

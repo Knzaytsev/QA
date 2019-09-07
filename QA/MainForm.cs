@@ -16,14 +16,11 @@ namespace QA
 {
     public partial class MainForm : Form
     {
-        string STsPath = @"..\..\Data\SoftwareTools.xml";
-        string STandCM = @"..\..\Data\SoftwareToolsAndCritariaMatrix.txt";
         public MainForm()
         {
             InitializeComponent();
         }
-
-
+        
         private void OSradioButton_CheckedChanged(object sender, EventArgs e)
         {
             RadioButton radioButton = (RadioButton)sender;
@@ -158,10 +155,11 @@ namespace QA
 
         private void GetFilteredCriteria(int id)
         {
-            FileUser fileUser = new FileUser(STsPath, new SoftwareToolRepository());
+            FileUser fileUser = new FileUser(Properties.Settings.Default.SoftwareTools, new SoftwareToolRepository());
             SoftwareTool softwareTool = (SoftwareTool)fileUser.getElementById(id);
 
-            fileUser = new FileUser(STandCM, new CriteriaMatrixRepository());
+            fileUser = new FileUser(Properties.Settings.Default.Matrix, new CriteriaMatrixRepository());
+            DataSingleton.GetInstance(id, true);
             DataSingleton.GetInstance((int[])fileUser.getElementById(softwareTool.Id));
         }
 

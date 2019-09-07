@@ -16,7 +16,6 @@ namespace QA
 {
     public partial class Stages : Form
     {
-        string LCPhasesPath = @"..\..\Data\LifeCyclePhases.xml";
         public Stages()
         {
             InitializeComponent();
@@ -112,13 +111,14 @@ namespace QA
 
         private void GetPhase(int id)
         {
-            FileUser fileUser = new FileUser(LCPhasesPath, new LifeCyclePhaseRepository());
+            FileUser fileUser = new FileUser(Properties.Settings.Default.Phases, new LifeCyclePhaseRepository());
             DataSingleton.GetInstance(((Phase)fileUser.getElementById(id)).Id);
         }
 
         private void ChoosePhase_Click(object sender, EventArgs e)
         {
-            IndicatorsFilter.FilterIndicators();
+            IndicatorsFilter indicatorsFilter = new IndicatorsFilter();
+            indicatorsFilter.FilterIndicators();
         }
 
         private void Back_Click(object sender, EventArgs e)

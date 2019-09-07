@@ -9,20 +9,18 @@ using QA.Repositories;
 
 namespace QA.Filters
 {
-    public static class MetricsFilter
+    public class MetricsFilter
     {
-        private static string MetricsPath = @"..\..\Data\Metrics.xml";
-
-        public static Metric[] FilterMetrics()
+        public Metric[] FilterMetrics()
         {
-            FileUser fileUser = new FileUser(MetricsPath, new MetricRepository());
+            FileUser fileUser = new FileUser(Properties.Settings.Default.Metrics, new MetricRepository());
             Metric[] metrics = (Metric[])fileUser.getElements();
             metrics = FilterByPhase(metrics);
             metrics = SetPriority(metrics);
             return metrics;
         }
 
-        private static Metric[] FilterByPhase(Metric[] metrics)
+        private Metric[] FilterByPhase(Metric[] metrics)
         {
             return metrics.Where(x => x.PhaseId == DataSingleton.GetInstance().IdPhase).ToArray();
         }
@@ -30,13 +28,14 @@ namespace QA.Filters
         /// <summary>
         /// Установка приоритетов для ОП
         /// </summary>
-        private static Metric[] SetPriority(Metric[] metrics)
+        private Metric[] SetPriority(Metric[] metrics)
         {
             int[] priorities = DataSingleton.GetInstance().Priorities.ToArray();
             List<Metric> result = new List<Metric>();
             for (int i = 0; i < priorities.Length; ++i)
             {
                 int priority = priorities[i];
+                if (priority == -1) { continue; }
                 var temp = metrics.Where(x => x.CriteriaId == i);
                 foreach (Metric metric in temp)
                 {
