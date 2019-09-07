@@ -14,6 +14,8 @@ namespace QA
 
         public List<int> Priorities { get; private set; }
 
+        public int SoftwareTool { get; private set; }
+
         private DataSingleton()
         {
             if (Priorities is null)
@@ -32,6 +34,11 @@ namespace QA
             Priorities = priorities.ToList();
         }
 
+        private void SetSt(int idSt)
+        {
+            SoftwareTool = idSt;
+        }
+
         public static DataSingleton GetInstance(int idPhase)
         {
             if (instance is null)
@@ -39,6 +46,16 @@ namespace QA
                 instance = new DataSingleton();
             }
             instance.SetPhase(idPhase);
+            return instance;
+        }
+
+        public static DataSingleton GetInstance(int idSt, bool st)
+        {
+            if (instance is null)
+            {
+                instance = new DataSingleton();
+            }
+            instance.SetSt(idSt);
             return instance;
         }
 

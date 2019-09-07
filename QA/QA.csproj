@@ -46,29 +46,45 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculateResult.cs" />
     <Compile Include="Classes\Indicator.cs" />
     <Compile Include="Classes\Criteria.cs" />
     <Compile Include="Classes\Metric.cs" />
     <Compile Include="Classes\Phase.cs" />
+    <Compile Include="Classes\Result.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
+    <Compile Include="DataSingleton.cs" />
     <Compile Include="Evaluation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Evaluation.Designer.cs">
       <DependentUpon>Evaluation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Filters\IndicatorsFilter.cs" />
+    <Compile Include="Repositories\CriteriasRepository.cs" />
     <Compile Include="Interactors\FileUser.cs" />
+    <Compile Include="Interactors\GetCriteriaMatrix.cs" />
+    <Compile Include="Interactors\GetCriterias.cs" />
+    <Compile Include="Interactors\GetIndicators.cs" />
+    <Compile Include="Interactors\GetMetrics.cs" />
+    <Compile Include="Interactors\GetSoftwareTools.cs" />
+    <Compile Include="Interactors\IGet.cs" />
+    <Compile Include="Interactors\IGetItems.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Filters\MetricsFilter.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\CriteriaMatrixRepository.cs" />
+    <Compile Include="Repositories\IndicatorsRepository.cs" />
+    <Compile Include="Repositories\IGetAllElements.cs" />
     <Compile Include="Repositories\IGetElement.cs" />
     <Compile Include="Repositories\LifeCyclePhaseRepository.cs" />
+    <Compile Include="Repositories\MetricRepository.cs" />
     <Compile Include="Repositories\SoftwareToolRepository.cs" />
     <Compile Include="Stages.cs">
       <SubType>Form</SubType>
