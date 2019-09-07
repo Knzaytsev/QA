@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace QA.Classes
 {
-    public class SoftwareTool
+    public class Phase
     {
         public int Id { get; set; }
 
-        public int IdGOST { get; set; }
+        public string Name { get; set; }
 
-        public string Description { get; set; }
+        public string Subphase { get; set; }
 
-        public SoftwareTool() { }
+        public string Result { get; set; }
+
+        public Phase() { }
     }
 }

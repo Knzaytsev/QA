@@ -28,26 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.panel1 = new System.Windows.Forms.Panel();
             this.OSradioButton = new System.Windows.Forms.RadioButton();
             this.DBMSradioButton = new System.Windows.Forms.RadioButton();
             this.ProgrammingToolsRadioButton = new System.Windows.Forms.RadioButton();
             this.InterfaceCommunicationRadioButton = new System.Windows.Forms.RadioButton();
-            this.PlanningRadioButton = new System.Windows.Forms.RadioButton();
-            this.ServiceProgramsRadioButton = new System.Windows.Forms.RadioButton();
-            this.ComputerServiceRadioButton = new System.Windows.Forms.RadioButton();
+            this.ComputingProcessRadioButton = new System.Windows.Forms.RadioButton();
+            this.ServiceSoftwareRadioButton = new System.Windows.Forms.RadioButton();
+            this.ServiceComputingRadioButton = new System.Windows.Forms.RadioButton();
             this.ScienceResearchRadioButton = new System.Windows.Forms.RadioButton();
-            this.ProjectingProgramRadioButton = new System.Windows.Forms.RadioButton();
-            this.ManagementRadioButton = new System.Windows.Forms.RadioButton();
+            this.ProjectingRadioButton = new System.Windows.Forms.RadioButton();
+            this.ManagingRadioButton = new System.Windows.Forms.RadioButton();
             this.EconomyRadioButton = new System.Windows.Forms.RadioButton();
             this.OtherRadioButton = new System.Windows.Forms.RadioButton();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.ChooseClass = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.OtherRadioButton);
+            this.panel1.Controls.Add(this.EconomyRadioButton);
+            this.panel1.Controls.Add(this.ManagingRadioButton);
+            this.panel1.Controls.Add(this.ProjectingRadioButton);
+            this.panel1.Controls.Add(this.ScienceResearchRadioButton);
+            this.panel1.Controls.Add(this.ServiceComputingRadioButton);
+            this.panel1.Controls.Add(this.ServiceSoftwareRadioButton);
+            this.panel1.Controls.Add(this.ComputingProcessRadioButton);
+            this.panel1.Controls.Add(this.InterfaceCommunicationRadioButton);
+            this.panel1.Controls.Add(this.ProgrammingToolsRadioButton);
+            this.panel1.Controls.Add(this.DBMSradioButton);
+            this.panel1.Controls.Add(this.OSradioButton);
+            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(569, 285);
+            this.panel1.TabIndex = 0;
             // 
             // OSradioButton
             // 
             this.OSradioButton.AutoSize = true;
-            this.OSradioButton.Location = new System.Drawing.Point(18, 20);
+            this.OSradioButton.Checked = true;
+            this.OSradioButton.Location = new System.Drawing.Point(3, 3);
             this.OSradioButton.Name = "OSradioButton";
             this.OSradioButton.Size = new System.Drawing.Size(287, 17);
             this.OSradioButton.TabIndex = 0;
@@ -60,163 +81,155 @@
             // DBMSradioButton
             // 
             this.DBMSradioButton.AutoSize = true;
-            this.DBMSradioButton.Location = new System.Drawing.Point(18, 43);
+            this.DBMSradioButton.Location = new System.Drawing.Point(3, 26);
             this.DBMSradioButton.Name = "DBMSradioButton";
             this.DBMSradioButton.Size = new System.Drawing.Size(229, 17);
             this.DBMSradioButton.TabIndex = 1;
-            this.DBMSradioButton.TabStop = true;
             this.DBMSradioButton.Tag = "1";
             this.DBMSradioButton.Text = "Программные средства управления БД";
             this.DBMSradioButton.UseVisualStyleBackColor = true;
+            this.DBMSradioButton.CheckedChanged += new System.EventHandler(this.DBMSradioButton_CheckedChanged);
             // 
             // ProgrammingToolsRadioButton
             // 
             this.ProgrammingToolsRadioButton.AutoSize = true;
-            this.ProgrammingToolsRadioButton.Location = new System.Drawing.Point(18, 66);
+            this.ProgrammingToolsRadioButton.Location = new System.Drawing.Point(3, 49);
             this.ProgrammingToolsRadioButton.Name = "ProgrammingToolsRadioButton";
-            this.ProgrammingToolsRadioButton.Size = new System.Drawing.Size(334, 17);
+            this.ProgrammingToolsRadioButton.Size = new System.Drawing.Size(357, 17);
             this.ProgrammingToolsRadioButton.TabIndex = 2;
-            this.ProgrammingToolsRadioButton.TabStop = true;
             this.ProgrammingToolsRadioButton.Tag = "2";
-            this.ProgrammingToolsRadioButton.Text = "Инструментально-технические средства программирования";
+            this.ProgrammingToolsRadioButton.Text = "Инструментально-технологические средства программирования";
             this.ProgrammingToolsRadioButton.UseVisualStyleBackColor = true;
+            this.ProgrammingToolsRadioButton.CheckedChanged += new System.EventHandler(this.ProgrammingToolsRadioButton_CheckedChanged);
             // 
             // InterfaceCommunicationRadioButton
             // 
             this.InterfaceCommunicationRadioButton.AutoSize = true;
-            this.InterfaceCommunicationRadioButton.Location = new System.Drawing.Point(18, 89);
+            this.InterfaceCommunicationRadioButton.Location = new System.Drawing.Point(3, 72);
             this.InterfaceCommunicationRadioButton.Name = "InterfaceCommunicationRadioButton";
             this.InterfaceCommunicationRadioButton.Size = new System.Drawing.Size(267, 17);
             this.InterfaceCommunicationRadioButton.TabIndex = 3;
-            this.InterfaceCommunicationRadioButton.TabStop = true;
             this.InterfaceCommunicationRadioButton.Tag = "3";
             this.InterfaceCommunicationRadioButton.Text = "ПС интерфейса и управления коммуникациями";
             this.InterfaceCommunicationRadioButton.UseVisualStyleBackColor = true;
+            this.InterfaceCommunicationRadioButton.CheckedChanged += new System.EventHandler(this.InterfaceCommunicationRadioButton_CheckedChanged);
             // 
-            // PlanningRadioButton
+            // ComputingProcessRadioButton
             // 
-            this.PlanningRadioButton.AutoSize = true;
-            this.PlanningRadioButton.Location = new System.Drawing.Point(18, 112);
-            this.PlanningRadioButton.Name = "PlanningRadioButton";
-            this.PlanningRadioButton.Size = new System.Drawing.Size(385, 17);
-            this.PlanningRadioButton.TabIndex = 4;
-            this.PlanningRadioButton.TabStop = true;
-            this.PlanningRadioButton.Tag = "4";
-            this.PlanningRadioButton.Text = "ПС организации вычислительного процесса (планирования, контроля)";
-            this.PlanningRadioButton.UseVisualStyleBackColor = true;
+            this.ComputingProcessRadioButton.AutoSize = true;
+            this.ComputingProcessRadioButton.Location = new System.Drawing.Point(3, 95);
+            this.ComputingProcessRadioButton.Name = "ComputingProcessRadioButton";
+            this.ComputingProcessRadioButton.Size = new System.Drawing.Size(385, 17);
+            this.ComputingProcessRadioButton.TabIndex = 4;
+            this.ComputingProcessRadioButton.Tag = "4";
+            this.ComputingProcessRadioButton.Text = "ПС организации вычислительного процесса (планирования, контроля)";
+            this.ComputingProcessRadioButton.UseVisualStyleBackColor = true;
+            this.ComputingProcessRadioButton.CheckedChanged += new System.EventHandler(this.ComputingProcessRadioButton_CheckedChanged);
             // 
-            // ServiceProgramsRadioButton
+            // ServiceSoftwareRadioButton
             // 
-            this.ServiceProgramsRadioButton.AutoSize = true;
-            this.ServiceProgramsRadioButton.Location = new System.Drawing.Point(18, 135);
-            this.ServiceProgramsRadioButton.Name = "ServiceProgramsRadioButton";
-            this.ServiceProgramsRadioButton.Size = new System.Drawing.Size(144, 17);
-            this.ServiceProgramsRadioButton.TabIndex = 5;
-            this.ServiceProgramsRadioButton.TabStop = true;
-            this.ServiceProgramsRadioButton.Tag = "5";
-            this.ServiceProgramsRadioButton.Text = "Сервисные программы";
-            this.ServiceProgramsRadioButton.UseVisualStyleBackColor = true;
+            this.ServiceSoftwareRadioButton.AutoSize = true;
+            this.ServiceSoftwareRadioButton.Location = new System.Drawing.Point(3, 118);
+            this.ServiceSoftwareRadioButton.Name = "ServiceSoftwareRadioButton";
+            this.ServiceSoftwareRadioButton.Size = new System.Drawing.Size(144, 17);
+            this.ServiceSoftwareRadioButton.TabIndex = 5;
+            this.ServiceSoftwareRadioButton.Tag = "5";
+            this.ServiceSoftwareRadioButton.Text = "Сервисные программы";
+            this.ServiceSoftwareRadioButton.UseVisualStyleBackColor = true;
+            this.ServiceSoftwareRadioButton.CheckedChanged += new System.EventHandler(this.ServiceSoftwareRadioButton_CheckedChanged);
             // 
-            // ComputerServiceRadioButton
+            // ServiceComputingRadioButton
             // 
-            this.ComputerServiceRadioButton.AutoSize = true;
-            this.ComputerServiceRadioButton.Location = new System.Drawing.Point(18, 158);
-            this.ComputerServiceRadioButton.Name = "ComputerServiceRadioButton";
-            this.ComputerServiceRadioButton.Size = new System.Drawing.Size(240, 17);
-            this.ComputerServiceRadioButton.TabIndex = 6;
-            this.ComputerServiceRadioButton.TabStop = true;
-            this.ComputerServiceRadioButton.Tag = "6";
-            this.ComputerServiceRadioButton.Text = "ПС обслуживания вычисительной техники";
-            this.ComputerServiceRadioButton.UseVisualStyleBackColor = true;
+            this.ServiceComputingRadioButton.AutoSize = true;
+            this.ServiceComputingRadioButton.Location = new System.Drawing.Point(3, 141);
+            this.ServiceComputingRadioButton.Name = "ServiceComputingRadioButton";
+            this.ServiceComputingRadioButton.Size = new System.Drawing.Size(246, 17);
+            this.ServiceComputingRadioButton.TabIndex = 6;
+            this.ServiceComputingRadioButton.Tag = "6";
+            this.ServiceComputingRadioButton.Text = "ПС обслуживания вычислительной техники";
+            this.ServiceComputingRadioButton.UseVisualStyleBackColor = true;
+            this.ServiceComputingRadioButton.CheckedChanged += new System.EventHandler(this.ServiceComputingRadioButton_CheckedChanged);
             // 
             // ScienceResearchRadioButton
             // 
             this.ScienceResearchRadioButton.AutoSize = true;
-            this.ScienceResearchRadioButton.Location = new System.Drawing.Point(18, 181);
+            this.ScienceResearchRadioButton.Location = new System.Drawing.Point(3, 164);
             this.ScienceResearchRadioButton.Name = "ScienceResearchRadioButton";
             this.ScienceResearchRadioButton.Size = new System.Drawing.Size(291, 17);
             this.ScienceResearchRadioButton.TabIndex = 7;
-            this.ScienceResearchRadioButton.TabStop = true;
             this.ScienceResearchRadioButton.Tag = "7";
             this.ScienceResearchRadioButton.Text = "Прикладные программы для научных исследований";
             this.ScienceResearchRadioButton.UseVisualStyleBackColor = true;
+            this.ScienceResearchRadioButton.CheckedChanged += new System.EventHandler(this.ScienceResearchRadioButton_CheckedChanged);
             // 
-            // ProjectingProgramRadioButton
+            // ProjectingRadioButton
             // 
-            this.ProjectingProgramRadioButton.AutoSize = true;
-            this.ProjectingProgramRadioButton.Location = new System.Drawing.Point(18, 204);
-            this.ProjectingProgramRadioButton.Name = "ProjectingProgramRadioButton";
-            this.ProjectingProgramRadioButton.Size = new System.Drawing.Size(247, 17);
-            this.ProjectingProgramRadioButton.TabIndex = 8;
-            this.ProjectingProgramRadioButton.TabStop = true;
-            this.ProjectingProgramRadioButton.Tag = "8";
-            this.ProjectingProgramRadioButton.Text = "Прикладные программы для планирования";
-            this.ProjectingProgramRadioButton.UseVisualStyleBackColor = true;
+            this.ProjectingRadioButton.AutoSize = true;
+            this.ProjectingRadioButton.Location = new System.Drawing.Point(3, 187);
+            this.ProjectingRadioButton.Name = "ProjectingRadioButton";
+            this.ProjectingRadioButton.Size = new System.Drawing.Size(258, 17);
+            this.ProjectingRadioButton.TabIndex = 8;
+            this.ProjectingRadioButton.Tag = "8";
+            this.ProjectingRadioButton.Text = "Прикладные программы для проектирования";
+            this.ProjectingRadioButton.UseVisualStyleBackColor = true;
+            this.ProjectingRadioButton.CheckedChanged += new System.EventHandler(this.ProjectingRadioButton_CheckedChanged);
             // 
-            // ManagementRadioButton
+            // ManagingRadioButton
             // 
-            this.ManagementRadioButton.AutoSize = true;
-            this.ManagementRadioButton.Location = new System.Drawing.Point(18, 227);
-            this.ManagementRadioButton.Name = "ManagementRadioButton";
-            this.ManagementRadioButton.Size = new System.Drawing.Size(553, 17);
-            this.ManagementRadioButton.TabIndex = 9;
-            this.ManagementRadioButton.TabStop = true;
-            this.ManagementRadioButton.Tag = "9";
-            this.ManagementRadioButton.Text = "Прикладные программы для управления техническими устройствами и технологическими " +
+            this.ManagingRadioButton.AutoSize = true;
+            this.ManagingRadioButton.Location = new System.Drawing.Point(3, 210);
+            this.ManagingRadioButton.Name = "ManagingRadioButton";
+            this.ManagingRadioButton.Size = new System.Drawing.Size(553, 17);
+            this.ManagingRadioButton.TabIndex = 9;
+            this.ManagingRadioButton.Tag = "9";
+            this.ManagingRadioButton.Text = "Прикладные программы для управления техническими устройствами и технологическими " +
     "процессами";
-            this.ManagementRadioButton.UseVisualStyleBackColor = true;
+            this.ManagingRadioButton.UseVisualStyleBackColor = true;
+            this.ManagingRadioButton.CheckedChanged += new System.EventHandler(this.ManagingRadioButton_CheckedChanged);
             // 
             // EconomyRadioButton
             // 
             this.EconomyRadioButton.AutoSize = true;
-            this.EconomyRadioButton.Location = new System.Drawing.Point(18, 250);
+            this.EconomyRadioButton.Location = new System.Drawing.Point(3, 233);
             this.EconomyRadioButton.Name = "EconomyRadioButton";
             this.EconomyRadioButton.Size = new System.Drawing.Size(332, 17);
             this.EconomyRadioButton.TabIndex = 10;
-            this.EconomyRadioButton.TabStop = true;
             this.EconomyRadioButton.Tag = "10";
             this.EconomyRadioButton.Text = "Прикладные программы для решения экономических задач";
             this.EconomyRadioButton.UseVisualStyleBackColor = true;
+            this.EconomyRadioButton.CheckedChanged += new System.EventHandler(this.EconomyRadioButton_CheckedChanged);
             // 
             // OtherRadioButton
             // 
             this.OtherRadioButton.AutoSize = true;
-            this.OtherRadioButton.Location = new System.Drawing.Point(18, 273);
+            this.OtherRadioButton.Location = new System.Drawing.Point(3, 256);
             this.OtherRadioButton.Name = "OtherRadioButton";
-            this.OtherRadioButton.Size = new System.Drawing.Size(86, 17);
+            this.OtherRadioButton.Size = new System.Drawing.Size(80, 17);
             this.OtherRadioButton.TabIndex = 11;
-            this.OtherRadioButton.TabStop = true;
             this.OtherRadioButton.Tag = "11";
-            this.OtherRadioButton.Text = "Пррочие ПС";
+            this.OtherRadioButton.Text = "Прочие ПС";
             this.OtherRadioButton.UseVisualStyleBackColor = true;
+            this.OtherRadioButton.CheckedChanged += new System.EventHandler(this.OtherRadioButton_CheckedChanged);
             // 
-            // panel1
+            // ChooseClass
             // 
-            this.panel1.Controls.Add(this.OSradioButton);
-            this.panel1.Controls.Add(this.OtherRadioButton);
-            this.panel1.Controls.Add(this.DBMSradioButton);
-            this.panel1.Controls.Add(this.EconomyRadioButton);
-            this.panel1.Controls.Add(this.ProgrammingToolsRadioButton);
-            this.panel1.Controls.Add(this.ManagementRadioButton);
-            this.panel1.Controls.Add(this.InterfaceCommunicationRadioButton);
-            this.panel1.Controls.Add(this.ProjectingProgramRadioButton);
-            this.panel1.Controls.Add(this.PlanningRadioButton);
-            this.panel1.Controls.Add(this.ScienceResearchRadioButton);
-            this.panel1.Controls.Add(this.ServiceProgramsRadioButton);
-            this.panel1.Controls.Add(this.ComputerServiceRadioButton);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(583, 304);
-            this.panel1.TabIndex = 12;
+            this.ChooseClass.Location = new System.Drawing.Point(587, 176);
+            this.ChooseClass.Name = "ChooseClass";
+            this.ChooseClass.Size = new System.Drawing.Size(117, 23);
+            this.ChooseClass.TabIndex = 12;
+            this.ChooseClass.Text = "Выбрать класс";
+            this.ChooseClass.UseVisualStyleBackColor = true;
+            this.ChooseClass.Click += new System.EventHandler(this.ChooseClass_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(641, 347);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ChooseClass);
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
-            this.Text = "Главная форма";
+            this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -225,19 +238,20 @@
 
         #endregion
 
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RadioButton OSradioButton;
         private System.Windows.Forms.RadioButton DBMSradioButton;
         private System.Windows.Forms.RadioButton ProgrammingToolsRadioButton;
         private System.Windows.Forms.RadioButton InterfaceCommunicationRadioButton;
-        private System.Windows.Forms.RadioButton PlanningRadioButton;
-        private System.Windows.Forms.RadioButton ServiceProgramsRadioButton;
-        private System.Windows.Forms.RadioButton ComputerServiceRadioButton;
+        private System.Windows.Forms.RadioButton ComputingProcessRadioButton;
+        private System.Windows.Forms.RadioButton ServiceSoftwareRadioButton;
+        private System.Windows.Forms.RadioButton ServiceComputingRadioButton;
         private System.Windows.Forms.RadioButton ScienceResearchRadioButton;
-        private System.Windows.Forms.RadioButton ProjectingProgramRadioButton;
-        private System.Windows.Forms.RadioButton ManagementRadioButton;
+        private System.Windows.Forms.RadioButton ProjectingRadioButton;
+        private System.Windows.Forms.RadioButton ManagingRadioButton;
         private System.Windows.Forms.RadioButton EconomyRadioButton;
         private System.Windows.Forms.RadioButton OtherRadioButton;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button ChooseClass;
     }
 }
 
