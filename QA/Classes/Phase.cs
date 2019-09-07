@@ -13,7 +13,7 @@ namespace QA.Classes
 
         public string Name { get; set; }
 
-        public string Subphase { get; set; }
+        public string Step { get; set; }
 
         public string Result { get; set; }
 
