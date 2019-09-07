@@ -1462,12 +1462,12 @@
 		<Id>243</Id>
 		<Code>К1003</Code>
 		<Description>Отношение числа модулей, отработавших в процессе тестирования и отладки (Qтм) к общему числу модулей (Qом)</Description>
-		<IdMethod>-1</IdMethod>
+		<IdMethod>6</IdMethod>
 	</Indicator>
 	<Indicator>
 		<Id>244</Id>
 		<Code>К1004</Code>
 		<Description>Отношение числа логических блоков, отработавших в процессе тестирования и отладки (Qтб), к общему числу логических блоков в программе (Qоб)</Description>
-		<IdMethod>-1</IdMethod>
+		<IdMethod>7</IdMethod>
 	</Indicator>
 </ArrayOfIndicator>
