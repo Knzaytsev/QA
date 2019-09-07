@@ -21,3 +21,4 @@ E:\GitHub\QA\QA\obj\Debug\QA.MainForm.resources
 E:\GitHub\QA\QA\obj\Debug\QA.Stages.resources
 E:\GitHub\QA\QA\obj\Debug\QA.exe
 E:\GitHub\QA\QA\obj\Debug\QA.pdb
+C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\obj\Debug\QA.Evaluation.resources

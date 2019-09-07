@@ -14,29 +14,29 @@ namespace QA
     public partial class Evaluation : Form
     {
         private Indicator[] indicators;
-        public Evaluation()
+        public Evaluation(Indicator[] indicators)
         {
             InitializeComponent();
+            this.indicators = indicators;
         }
 
         private void Compute_Click(object sender, EventArgs e)
         {
             bool flag = true;
-            foreach(DataGridViewRow r in CharsListDGV.Rows)
+            for (int i = 0; i < CharsListDGV.Rows.Count; ++i)
             {
-                var value = r.DataGridView["Value", 0].Value;
-                if (!(value is float || value is int))
+                CharsListDGV["Value", i].Style.BackColor = System.Drawing.Color.White;
+                float value = 0;
+                try
                 {
-                    r.DataGridView["Value", 0].Style.BackColor = System.Drawing.Color.Red;
-                    flag = false;
-                }
-                else
-                {
+                    value = float.Parse((string)CharsListDGV["Value", i].Value);
                     if ((float)value > 1 || (float)value < 0)
-                    {
-                        r.DataGridView["Value", 0].Style.BackColor = System.Drawing.Color.Red;
-                        flag = false;
-                    }
+                        throw new Exception();
+                }
+                catch(Exception exc)
+                {
+                    CharsListDGV["Value", i].Style.BackColor = System.Drawing.Color.FromArgb(255, 207, 207);
+                    flag = false;
                 }
             }
             if (!flag)
@@ -54,12 +54,30 @@ namespace QA
 
         private void EvaluationLoad(object sender, EventArgs e)
         {
-            //Получение ОП
-            /*indicators = characteristics;
-            foreach (var c in characteristics)
+            for (int i = 0; i < indicators.Length; ++i)
             {
-                CharsListDGV.Rows.Add(c.Id, c.Code, c.Description);
-            }*/
+                Color color = Color.White;
+                switch (indicators[i].Priority)
+                {
+                    case 1:
+                        color = Color.White;
+                        break;
+                    case 0:
+                        color = Color.FromArgb(254, 255, 171);
+                        break;
+                    case -1:
+                        continue;
+                }
+                CharsListDGV.Rows.Add(indicators[i].Id, indicators[i].Code, indicators[i].Description);
+                CharsListDGV["Value", i].Style.BackColor = color;
+            }
+        }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            Stages form = new Stages();
+            form.Show();
+            this.Close();
         }
     }
 }
