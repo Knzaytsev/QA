@@ -118,7 +118,8 @@ namespace QA
 
         private void ChoosePhase_Click(object sender, EventArgs e)
         {
-            IndicatorsFilter.FilterIndicators();
+            IndicatorsFilter indicatorsFilter = new IndicatorsFilter();
+            indicatorsFilter.FilterIndicators();
         }
 
         private void Back_Click(object sender, EventArgs e)
