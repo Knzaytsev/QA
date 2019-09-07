@@ -41,6 +41,7 @@
             this.ManagingRadioButton = new System.Windows.Forms.RadioButton();
             this.EconomyRadioButton = new System.Windows.Forms.RadioButton();
             this.OtherRadioButton = new System.Windows.Forms.RadioButton();
+            this.ChooseClass = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,16 +61,18 @@
             this.panel1.Controls.Add(this.OSradioButton);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(569, 328);
+            this.panel1.Size = new System.Drawing.Size(569, 285);
             this.panel1.TabIndex = 0;
             // 
             // OSradioButton
             // 
             this.OSradioButton.AutoSize = true;
+            this.OSradioButton.Checked = true;
             this.OSradioButton.Location = new System.Drawing.Point(3, 3);
             this.OSradioButton.Name = "OSradioButton";
             this.OSradioButton.Size = new System.Drawing.Size(287, 17);
             this.OSradioButton.TabIndex = 0;
+            this.OSradioButton.TabStop = true;
             this.OSradioButton.Tag = "0";
             this.OSradioButton.Text = "Операционные системы и средства их расширения";
             this.OSradioButton.UseVisualStyleBackColor = true;
@@ -208,11 +211,22 @@
             this.OtherRadioButton.UseVisualStyleBackColor = true;
             this.OtherRadioButton.CheckedChanged += new System.EventHandler(this.OtherRadioButton_CheckedChanged);
             // 
+            // ChooseClass
+            // 
+            this.ChooseClass.Location = new System.Drawing.Point(587, 176);
+            this.ChooseClass.Name = "ChooseClass";
+            this.ChooseClass.Size = new System.Drawing.Size(117, 23);
+            this.ChooseClass.TabIndex = 12;
+            this.ChooseClass.Text = "Выбрать класс";
+            this.ChooseClass.UseVisualStyleBackColor = true;
+            this.ChooseClass.Click += new System.EventHandler(this.ChooseClass_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ChooseClass);
             this.Controls.Add(this.panel1);
             this.Name = "MainForm";
             this.Text = "Form1";
@@ -237,6 +251,7 @@
         private System.Windows.Forms.RadioButton ManagingRadioButton;
         private System.Windows.Forms.RadioButton EconomyRadioButton;
         private System.Windows.Forms.RadioButton OtherRadioButton;
+        private System.Windows.Forms.Button ChooseClass;
     }
 }
 

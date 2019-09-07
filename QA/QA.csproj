@@ -46,10 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Phase.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
     <Compile Include="Interactors\FileUser.cs" />
+    <Compile Include="Stages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stages.Designer.cs">
+      <DependentUpon>Stages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Repositories\CriteriaMatrixRepository.cs" />
     <Compile Include="Repositories\IGetElement.cs" />
+    <Compile Include="Repositories\LifeCyclePhaseRepository.cs" />
     <Compile Include="Repositories\SoftwareToolRepository.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -61,6 +69,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stages.resx">
+      <DependentUpon>Stages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -17,3 +17,4 @@ C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\bin\Debug\QA.exe.confi
 C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\bin\Debug\QA.exe
 C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\bin\Debug\QA.pdb
 C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\obj\Debug\QA.MainForm.resources
+C:\Users\Tuccc\Desktop\Учёба\3 курс\QA & T\QA\QA\obj\Debug\QA.Stages.resources

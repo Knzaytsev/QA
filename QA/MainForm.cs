@@ -163,5 +163,12 @@ namespace QA
             fileUser = new FileUser(STandCM, new CriteriaMatrixRepository());
             return (int[])fileUser.getElementById(softwareTool.Id);
         }
+
+        private void ChooseClass_Click(object sender, EventArgs e)
+        {
+            Stages form = new Stages();
+            form.Show();
+            this.Visible = false;
+        }
     }
 }
