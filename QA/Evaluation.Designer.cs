@@ -54,6 +54,8 @@
             this.K1003 = new System.Windows.Forms.Button();
             this.K1004 = new System.Windows.Forms.Button();
             this.buttonPanel = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.SaveData = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.CharsListDGV)).BeginInit();
             this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
@@ -305,11 +307,23 @@
             this.buttonPanel.Size = new System.Drawing.Size(175, 117);
             this.buttonPanel.TabIndex = 19;
             // 
+            // SaveData
+            // 
+            this.SaveData.Location = new System.Drawing.Point(723, 369);
+            this.SaveData.Name = "SaveData";
+            this.SaveData.Size = new System.Drawing.Size(112, 23);
+            this.SaveData.TabIndex = 12;
+            this.SaveData.Text = "Сохранить данные";
+            this.SaveData.UseVisualStyleBackColor = true;
+            this.SaveData.Click += new System.EventHandler(this.SaveData_Click);
+            // 
             // Evaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 404);
+            this.Controls.Add(this.SaveData);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -363,5 +377,7 @@
         private System.Windows.Forms.Button K1003;
         private System.Windows.Forms.Button K1004;
         private System.Windows.Forms.Panel buttonPanel;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button SaveData;
     }
 }
