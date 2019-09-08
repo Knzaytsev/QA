@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ArrayOfMetric xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Metric>
+		<Id>0</Id>
+		<CriteriaId>0</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>Н01 Н02</Metrics>
+	</Metric>
+	<Metric>
+		<Id>1</Id>
+		<CriteriaId>0</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>Н01 Н02 Н03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>2</Id>
+		<CriteriaId>0</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>Н01 Н02 Н03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>3</Id>
+		<CriteriaId>1</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>Н04 Н05</Metrics>
+	</Metric>
+	<Metric>
+		<Id>4</Id>
+		<CriteriaId>0</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>Н01 Н02 Н03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>5</Id>
+		<CriteriaId>1</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>Н04 Н05</Metrics>
+	</Metric>
+	<Metric>
+		<Id>6</Id>
+		<CriteriaId>0</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>Н01 Н02 Н03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>7</Id>
+		<CriteriaId>1</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>Н04 Н05</Metrics>
+	</Metric>
+	<Metric>
+		<Id>8</Id>
+		<CriteriaId>0</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>Н01 Н02 Н03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>9</Id>
+		<CriteriaId>1</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>Н04 Н05</Metrics>
+	</Metric>
+	<Metric>
+		<Id>10</Id>
+		<CriteriaId>0</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>Н01 Н02 Н03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>11</Id>
+		<CriteriaId>1</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>Н04 Н05</Metrics>
+	</Metric>
+	<Metric>
+		<Id>12</Id>
+		<CriteriaId>3</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>С01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>13</Id>
+		<CriteriaId>5</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>С13</Metrics>
+	</Metric>
+	<Metric>
+		<Id>14</Id>
+		<CriteriaId>3</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>С01 С02 С03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>15</Id>
+		<CriteriaId>4</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>С04</Metrics>
+	</Metric>
+	<Metric>
+		<Id>16</Id>
+		<CriteriaId>5</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>С13 С14</Metrics>
+	</Metric>
+	<Metric>
+		<Id>17</Id>
+		<CriteriaId>3</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>С02 С10</Metrics>
+	</Metric>
+	<Metric>
+		<Id>18</Id>
+		<CriteriaId>4</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>С04 С08 С09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>19</Id>
+		<CriteriaId>2</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>С05 С06 С07</Metrics>
+	</Metric>
+	<Metric>
+		<Id>20</Id>
+		<CriteriaId>3</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>С02 С10</Metrics>
+	</Metric>
+	<Metric>
+		<Id>21</Id>
+		<CriteriaId>4</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>С04 С08 С09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>22</Id>
+		<CriteriaId>2</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>С05 С06 С07</Metrics>
+	</Metric>
+	<Metric>
+		<Id>23</Id>
+		<CriteriaId>3</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>С02 С10</Metrics>
+	</Metric>
+	<Metric>
+		<Id>24</Id>
+		<CriteriaId>4</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>С04 С08 С09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>25</Id>
+		<CriteriaId>2</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>С05 С06 С07</Metrics>
+	</Metric>
+	<Metric>
+		<Id>26</Id>
+		<CriteriaId>3</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>С02 С10</Metrics>
+	</Metric>
+	<Metric>
+		<Id>27</Id>
+		<CriteriaId>4</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>С04 С08 С09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>28</Id>
+		<CriteriaId>2</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>С05 С06 С07</Metrics>
+	</Metric>
+	<Metric>
+		<Id>29</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>С01 С02</Metrics>
+	</Metric>
+	<Metric>
+		<Id>30</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>С04 С08 С09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>31</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>С05 С06 С07</Metrics>
+	</Metric>
+	<Metric>
+		<Id>32</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>У08 У09 У10 У11 У12</Metrics>
+	</Metric>
+	<Metric>
+		<Id>33</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>У08 У09 У10 У11 У12</Metrics>
+	</Metric>
+	<Metric>
+		<Id>34</Id>
+		<CriteriaId>7</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>У03 У04 У05 У06</Metrics>
+	</Metric>
+	<Metric>
+		<Id>35</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>У07 У08 У09 У10 У11 У12</Metrics>
+	</Metric>
+	<Metric>
+		<Id>36</Id>
+		<CriteriaId>7</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>У03 У04 У05 У06</Metrics>
+	</Metric>
+	<Metric>
+		<Id>37</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>У07 У08 У09 У10 У11 У12</Metrics>
+	</Metric>
+	<Metric>
+		<Id>38</Id>
+		<CriteriaId>6</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>У01 У02 У03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>39</Id>
+		<CriteriaId>7</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>У04 У05 У06 У07</Metrics>
+	</Metric>
+	<Metric>
+		<Id>40</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>У08 У09 У10 У11 У12</Metrics>
+	</Metric>
+	<Metric>
+		<Id>41</Id>
+		<CriteriaId>6</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>У01 У02 У03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>42</Id>
+		<CriteriaId>7</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>У04 У05 У06 У07</Metrics>
+	</Metric>
+	<Metric>
+		<Id>43</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>У08 У09 У10 У11 У12</Metrics>
+	</Metric>
+	<Metric>
+		<Id>44</Id>
+		<CriteriaId>6</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>У01 У02 У03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>45</Id>
+		<CriteriaId>7</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>У04 У05 У06 У07</Metrics>
+	</Metric>
+	<Metric>
+		<Id>46</Id>
+		<CriteriaId>8</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>У08 У09 У10 У11 У12</Metrics>
+	</Metric>
+	<Metric>
+		<Id>47</Id>
+		<CriteriaId>9</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>Э01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>48</Id>
+		<CriteriaId>10</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>Э02</Metrics>
+	</Metric>
+	<Metric>
+		<Id>49</Id>
+		<CriteriaId>11</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>Э03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>50</Id>
+		<CriteriaId>9</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>Э01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>51</Id>
+		<CriteriaId>11</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>Э03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>52</Id>
+		<CriteriaId>9</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>Э01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>53</Id>
+		<CriteriaId>10</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>Э02</Metrics>
+	</Metric>
+	<Metric>
+		<Id>54</Id>
+		<CriteriaId>11</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>Э03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>55</Id>
+		<CriteriaId>9</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>Э01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>56</Id>
+		<CriteriaId>10</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>Э02</Metrics>
+	</Metric>
+	<Metric>
+		<Id>57</Id>
+		<CriteriaId>11</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>Э03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>58</Id>
+		<CriteriaId>9</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>Э01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>59</Id>
+		<CriteriaId>10</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>Э02</Metrics>
+	</Metric>
+	<Metric>
+		<Id>60</Id>
+		<CriteriaId>11</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>Э03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>61</Id>
+		<CriteriaId>9</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>Э01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>62</Id>
+		<CriteriaId>10</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>Э02</Metrics>
+	</Metric>
+	<Metric>
+		<Id>63</Id>
+		<CriteriaId>11</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>Э03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>64</Id>
+		<CriteriaId>9</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>Э01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>65</Id>
+		<CriteriaId>10</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>Э02</Metrics>
+	</Metric>
+	<Metric>
+		<Id>66</Id>
+		<CriteriaId>11</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>Э03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>67</Id>
+		<CriteriaId>12</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>Г01</Metrics>
+	</Metric>
+	<Metric>
+		<Id>68</Id>
+		<CriteriaId>13</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>Г07 Г08 Г09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>69</Id>
+		<CriteriaId>12</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>Г01 Г02 Г03</Metrics>
+	</Metric>
+	<Metric>
+		<Id>70</Id>
+		<CriteriaId>12</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>Г01 Г02 Г03 Г04 Г05 Г06</Metrics>
+	</Metric>
+	<Metric>
+		<Id>71</Id>
+		<CriteriaId>13</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>Г07 Г08 Г09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>72</Id>
+		<CriteriaId>14</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>Г10 Г11 Г12 Г13 Г14</Metrics>
+	</Metric>
+	<Metric>
+		<Id>73</Id>
+		<CriteriaId>12</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>Г01 Г02 Г03 Г04 Г05 Г06</Metrics>
+	</Metric>
+	<Metric>
+		<Id>74</Id>
+		<CriteriaId>13</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>Г07 Г08 Г09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>75</Id>
+		<CriteriaId>14</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>Г10 Г11 Г12 Г13 Г14</Metrics>
+	</Metric>
+	<Metric>
+		<Id>76</Id>
+		<CriteriaId>12</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>Г01 Г02 Г03 Г04 Г05 Г06</Metrics>
+	</Metric>
+	<Metric>
+		<Id>77</Id>
+		<CriteriaId>13</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>Г07 Г08 Г09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>78</Id>
+		<CriteriaId>14</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>Г10 Г11 Г12 Г13 Г14</Metrics>
+	</Metric>
+	<Metric>
+		<Id>79</Id>
+		<CriteriaId>12</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>Г01 Г02 Г03 Г04 Г05 Г06</Metrics>
+	</Metric>
+	<Metric>
+		<Id>80</Id>
+		<CriteriaId>13</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>Г07 Г08 Г09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>81</Id>
+		<CriteriaId>14</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>Г10 Г11 Г12 Г13 Г14</Metrics>
+	</Metric>
+	<Metric>
+		<Id>82</Id>
+		<CriteriaId>12</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>Г01 Г02 Г03 Г04 Г05 Г06</Metrics>
+	</Metric>
+	<Metric>
+		<Id>83</Id>
+		<CriteriaId>13</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>Г07 Г08 Г09</Metrics>
+	</Metric>
+	<Metric>
+		<Id>84</Id>
+		<CriteriaId>14</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>Г10 Г11 Г12 Г13 Г14</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>15</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>К01</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>16</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>К05  К06 К08</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>18</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>К10</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>17</CriteriaId>
+		<PhaseId>0</PhaseId>
+		<Metrics>К11</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>15</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>К01</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>16</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>К05 К06 К03 К07</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>17</CriteriaId>
+		<PhaseId>1</PhaseId>
+		<Metrics>К11</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>15</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>К01 К02</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>16</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>К05 К06 К04 К03 К07 К08 К09</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>18</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>К10</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>17</CriteriaId>
+		<PhaseId>2</PhaseId>
+		<Metrics>К11 К12</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>15</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>К01 К02</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>16</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>К05 К06 К04 К03 К07 К08 К09</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>18</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>К10</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>17</CriteriaId>
+		<PhaseId>3</PhaseId>
+		<Metrics>К11 К12</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>15</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>К01 К02</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>16</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>К05 К06 К04 К03 К07 К08 К09</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>18</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>К10</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>17</CriteriaId>
+		<PhaseId>4</PhaseId>
+		<Metrics>К11 К12</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>15</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>К01 К02</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>16</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>К05 К06 К04 К03 К07 К08 К09</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>18</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>К10</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>17</CriteriaId>
+		<PhaseId>5</PhaseId>
+		<Metrics>К11 К12</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>15</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>К01 К02</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>16</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>К06 К09</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>18</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>К10</Metrics>
+	</Metric>
+	<Metric>
+		<CriteriaId>17</CriteriaId>
+		<PhaseId>8</PhaseId>
+		<Metrics>К12</Metrics>
+	</Metric>
+</ArrayOfMetric>
