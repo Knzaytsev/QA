@@ -46,7 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculateResult.cs" />
+    <Compile Include="Calculators\CalculateIndicators.cs" />
+    <Compile Include="Calculators\CalculateResult.cs" />
     <Compile Include="Classes\Indicator.cs" />
     <Compile Include="Classes\Criteria.cs" />
     <Compile Include="Classes\Metric.cs" />
@@ -99,7 +100,7 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
