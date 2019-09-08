@@ -177,17 +177,17 @@
             // 
             // ChoosePhase
             // 
-            this.ChoosePhase.Location = new System.Drawing.Point(316, 12);
+            this.ChoosePhase.Location = new System.Drawing.Point(236, 267);
             this.ChoosePhase.Name = "ChoosePhase";
-            this.ChoosePhase.Size = new System.Drawing.Size(112, 23);
+            this.ChoosePhase.Size = new System.Drawing.Size(74, 23);
             this.ChoosePhase.TabIndex = 10;
-            this.ChoosePhase.Text = "Выбрать фазу";
+            this.ChoosePhase.Text = "Далее";
             this.ChoosePhase.UseVisualStyleBackColor = true;
             this.ChoosePhase.Click += new System.EventHandler(this.ChoosePhase_Click);
             // 
             // Back
             // 
-            this.Back.Location = new System.Drawing.Point(316, 41);
+            this.Back.Location = new System.Drawing.Point(12, 267);
             this.Back.Name = "Back";
             this.Back.Size = new System.Drawing.Size(75, 23);
             this.Back.TabIndex = 11;
@@ -199,12 +199,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(326, 298);
             this.Controls.Add(this.Back);
             this.Controls.Add(this.ChoosePhase);
             this.Controls.Add(this.panel1);
             this.Name = "Stages";
-            this.Text = "Phase";
+            this.Text = "Выбор фазы ЖЦ";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
