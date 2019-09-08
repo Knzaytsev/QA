@@ -16,6 +16,8 @@ namespace QA
 {
     public partial class Stages : Form
     {
+        private bool closedByUser = true;
+
         public Stages()
         {
             InitializeComponent();
@@ -120,12 +122,40 @@ namespace QA
             IndicatorsFilter indicatorsFilter = new IndicatorsFilter();
             Evaluation form = new Evaluation(indicatorsFilter.FilterIndicators());
             form.Show();
-            this.Close();
+            closedByUser = false;
+            Close();
         }
 
         private void Back_Click(object sender, EventArgs e)
         {
+            MainForm form = new MainForm();
+            form.Show();
+            closedByUser = false;
+            Close();
+        }
 
+        private void Stages_Load(object sender, EventArgs e)
+        {
+            DataSingleton instance = DataSingleton.GetInstance();
+            if (instance != null)
+            {
+                foreach (Control children in panel1.Controls)
+                {
+                    if (Equals(children.Tag, instance.IdPhase.ToString()))
+                    {
+                        ((RadioButton)children).Checked = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void Stages_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (closedByUser)
+            {
+                Application.Exit();
+            }
         }
     }
 }

@@ -15,6 +15,8 @@ namespace QA
     {
         private Indicator[] indicators;
 
+        private bool closedByUser = true;
+
         public Evaluation(Indicator[] indicators)
         {
             InitializeComponent();
@@ -108,7 +110,16 @@ namespace QA
         {
             Stages form = new Stages();
             form.Show();
+            closedByUser = false;
             this.Close();
+        }
+
+        private void Evaluation_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (closedByUser)
+            {
+                Application.Exit();
+            }
         }
     }
 }
