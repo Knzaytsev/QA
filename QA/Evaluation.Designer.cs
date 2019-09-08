@@ -45,8 +45,17 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.N0305 = new System.Windows.Forms.Button();
+            this.N0401 = new System.Windows.Forms.Button();
+            this.N0501 = new System.Windows.Forms.Button();
+            this.N0502 = new System.Windows.Forms.Button();
+            this.C0302 = new System.Windows.Forms.Button();
+            this.C1002 = new System.Windows.Forms.Button();
+            this.K1003 = new System.Windows.Forms.Button();
+            this.K1004 = new System.Windows.Forms.Button();
+            this.buttonPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.CharsListDGV)).BeginInit();
+            this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // CharsListDGV
@@ -93,7 +102,7 @@
             this.Compute.Name = "Compute";
             this.Compute.Size = new System.Drawing.Size(75, 23);
             this.Compute.TabIndex = 1;
-            this.Compute.Text = "Далее";
+            this.Compute.Text = "Посчитать";
             this.Compute.UseVisualStyleBackColor = true;
             this.Compute.Click += new System.EventHandler(this.Compute_Click);
             // 
@@ -193,21 +202,115 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Необязательный, введён верно";
             // 
-            // label7
+            // N0305
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(595, 164);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(230, 26);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Результаты оценки всех уровней доступны \r\nпри сохранении в файл";
+            this.N0305.Enabled = false;
+            this.N0305.Location = new System.Drawing.Point(8, 3);
+            this.N0305.Name = "N0305";
+            this.N0305.Size = new System.Drawing.Size(75, 23);
+            this.N0305.TabIndex = 11;
+            this.N0305.Text = "Н0305";
+            this.N0305.UseVisualStyleBackColor = true;
+            this.N0305.Click += new System.EventHandler(this.N0305_Click);
+            // 
+            // N0401
+            // 
+            this.N0401.Enabled = false;
+            this.N0401.Location = new System.Drawing.Point(8, 30);
+            this.N0401.Name = "N0401";
+            this.N0401.Size = new System.Drawing.Size(75, 23);
+            this.N0401.TabIndex = 12;
+            this.N0401.Text = "Н0401";
+            this.N0401.UseVisualStyleBackColor = true;
+            this.N0401.Click += new System.EventHandler(this.N0401_Click);
+            // 
+            // N0501
+            // 
+            this.N0501.Enabled = false;
+            this.N0501.Location = new System.Drawing.Point(8, 59);
+            this.N0501.Name = "N0501";
+            this.N0501.Size = new System.Drawing.Size(75, 23);
+            this.N0501.TabIndex = 13;
+            this.N0501.Text = "Н0501";
+            this.N0501.UseVisualStyleBackColor = true;
+            this.N0501.Click += new System.EventHandler(this.N0501_Click);
+            // 
+            // N0502
+            // 
+            this.N0502.Enabled = false;
+            this.N0502.Location = new System.Drawing.Point(8, 88);
+            this.N0502.Name = "N0502";
+            this.N0502.Size = new System.Drawing.Size(75, 23);
+            this.N0502.TabIndex = 14;
+            this.N0502.Text = "Н0502";
+            this.N0502.UseVisualStyleBackColor = true;
+            this.N0502.Click += new System.EventHandler(this.N0502_Click);
+            // 
+            // C0302
+            // 
+            this.C0302.Enabled = false;
+            this.C0302.Location = new System.Drawing.Point(89, 3);
+            this.C0302.Name = "C0302";
+            this.C0302.Size = new System.Drawing.Size(75, 23);
+            this.C0302.TabIndex = 15;
+            this.C0302.Text = "С0302";
+            this.C0302.UseVisualStyleBackColor = true;
+            this.C0302.Click += new System.EventHandler(this.C0302_Click);
+            // 
+            // C1002
+            // 
+            this.C1002.Enabled = false;
+            this.C1002.Location = new System.Drawing.Point(89, 30);
+            this.C1002.Name = "C1002";
+            this.C1002.Size = new System.Drawing.Size(75, 23);
+            this.C1002.TabIndex = 16;
+            this.C1002.Text = "С1002";
+            this.C1002.UseVisualStyleBackColor = true;
+            this.C1002.Click += new System.EventHandler(this.C1002_Click);
+            // 
+            // K1003
+            // 
+            this.K1003.Enabled = false;
+            this.K1003.Location = new System.Drawing.Point(89, 59);
+            this.K1003.Name = "K1003";
+            this.K1003.Size = new System.Drawing.Size(75, 23);
+            this.K1003.TabIndex = 17;
+            this.K1003.Text = "К1003";
+            this.K1003.UseVisualStyleBackColor = true;
+            this.K1003.Click += new System.EventHandler(this.K1003_Click);
+            // 
+            // K1004
+            // 
+            this.K1004.Enabled = false;
+            this.K1004.Location = new System.Drawing.Point(89, 88);
+            this.K1004.Name = "K1004";
+            this.K1004.Size = new System.Drawing.Size(75, 23);
+            this.K1004.TabIndex = 18;
+            this.K1004.Text = "К1004";
+            this.K1004.UseVisualStyleBackColor = true;
+            this.K1004.Click += new System.EventHandler(this.K1004_Click);
+            // 
+            // buttonPanel
+            // 
+            this.buttonPanel.Controls.Add(this.K1004);
+            this.buttonPanel.Controls.Add(this.N0305);
+            this.buttonPanel.Controls.Add(this.K1003);
+            this.buttonPanel.Controls.Add(this.N0401);
+            this.buttonPanel.Controls.Add(this.C1002);
+            this.buttonPanel.Controls.Add(this.N0501);
+            this.buttonPanel.Controls.Add(this.C0302);
+            this.buttonPanel.Controls.Add(this.N0502);
+            this.buttonPanel.Location = new System.Drawing.Point(595, 167);
+            this.buttonPanel.Name = "buttonPanel";
+            this.buttonPanel.Size = new System.Drawing.Size(175, 117);
+            this.buttonPanel.TabIndex = 19;
             // 
             // Evaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 404);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -226,6 +329,7 @@
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Evaluation_FormClosed);
             this.Load += new System.EventHandler(this.EvaluationLoad);
             ((System.ComponentModel.ISupportInitialize)(this.CharsListDGV)).EndInit();
+            this.buttonPanel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -250,6 +354,14 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button N0305;
+        private System.Windows.Forms.Button N0401;
+        private System.Windows.Forms.Button N0501;
+        private System.Windows.Forms.Button N0502;
+        private System.Windows.Forms.Button C0302;
+        private System.Windows.Forms.Button C1002;
+        private System.Windows.Forms.Button K1003;
+        private System.Windows.Forms.Button K1004;
+        private System.Windows.Forms.Panel buttonPanel;
     }
 }

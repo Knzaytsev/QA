@@ -46,14 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calculators\C0302.cs" />
+    <Compile Include="Calculators\C1002.cs" />
+    <Compile Include="Calculators\CalculateIndicator.cs" />
     <Compile Include="Calculators\CalculateIndicators.cs" />
     <Compile Include="Calculators\CalculateResult.cs" />
+    <Compile Include="Calculators\ICalculateIndicators.cs" />
+    <Compile Include="Calculators\K1003.cs" />
+    <Compile Include="Calculators\K1004.cs" />
+    <Compile Include="Calculators\N0305.cs" />
+    <Compile Include="Calculators\N0401.cs" />
+    <Compile Include="Calculators\N0501.cs" />
+    <Compile Include="Calculators\N0502.cs" />
     <Compile Include="Classes\Indicator.cs" />
     <Compile Include="Classes\Criteria.cs" />
     <Compile Include="Classes\Metric.cs" />
     <Compile Include="Classes\Phase.cs" />
     <Compile Include="Classes\Result.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
+    <Compile Include="ComputeSomeParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComputeSomeParams.Designer.cs">
+      <DependentUpon>ComputeSomeParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComputeTwoParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComputeTwoParams.Designer.cs">
+      <DependentUpon>ComputeTwoParams.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSingleton.cs" />
     <Compile Include="Evaluation.cs">
       <SubType>Form</SubType>
@@ -93,6 +115,12 @@
     <Compile Include="Stages.Designer.cs">
       <DependentUpon>Stages.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ComputeSomeParams.resx">
+      <DependentUpon>ComputeSomeParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComputeTwoParams.resx">
+      <DependentUpon>ComputeTwoParams.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Evaluation.resx">
       <DependentUpon>Evaluation.cs</DependentUpon>
     </EmbeddedResource>
