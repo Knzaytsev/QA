@@ -29,10 +29,6 @@
         private void InitializeComponent()
         {
             this.CharsListDGV = new System.Windows.Forms.DataGridView();
-            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Compute = new System.Windows.Forms.Button();
             this.back = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,8 +50,11 @@
             this.K1003 = new System.Windows.Forms.Button();
             this.K1004 = new System.Windows.Forms.Button();
             this.buttonPanel = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
             this.SaveData = new System.Windows.Forms.Button();
+            this.Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Value = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.CharsListDGV)).BeginInit();
             this.buttonPanel.SuspendLayout();
             this.SuspendLayout();
@@ -64,6 +63,9 @@
             // 
             this.CharsListDGV.AllowUserToAddRows = false;
             this.CharsListDGV.AllowUserToDeleteRows = false;
+            this.CharsListDGV.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.CharsListDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.CharsListDGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Id,
@@ -72,35 +74,13 @@
             this.Value});
             this.CharsListDGV.Location = new System.Drawing.Point(12, 12);
             this.CharsListDGV.Name = "CharsListDGV";
-            this.CharsListDGV.Size = new System.Drawing.Size(577, 354);
+            this.CharsListDGV.Size = new System.Drawing.Size(668, 354);
             this.CharsListDGV.TabIndex = 0;
-            // 
-            // Id
-            // 
-            this.Id.HeaderText = "ИД";
-            this.Id.Name = "Id";
-            this.Id.Visible = false;
-            // 
-            // Code
-            // 
-            this.Code.HeaderText = "Код";
-            this.Code.Name = "Code";
-            this.Code.ReadOnly = true;
-            // 
-            // Description
-            // 
-            this.Description.HeaderText = "Наименование";
-            this.Description.Name = "Description";
-            this.Description.ReadOnly = true;
-            // 
-            // Value
-            // 
-            this.Value.HeaderText = "Оценка";
-            this.Value.Name = "Value";
             // 
             // Compute
             // 
-            this.Compute.Location = new System.Drawing.Point(514, 372);
+            this.Compute.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Compute.Location = new System.Drawing.Point(605, 372);
             this.Compute.Name = "Compute";
             this.Compute.Size = new System.Drawing.Size(75, 23);
             this.Compute.TabIndex = 1;
@@ -110,6 +90,7 @@
             // 
             // back
             // 
+            this.back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.back.Location = new System.Drawing.Point(12, 372);
             this.back.Name = "back";
             this.back.Size = new System.Drawing.Size(75, 23);
@@ -120,8 +101,9 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(595, 12);
+            this.label1.Location = new System.Drawing.Point(686, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(167, 13);
             this.label1.TabIndex = 3;
@@ -129,40 +111,45 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(207)))), ((int)(((byte)(207)))));
-            this.panel1.Location = new System.Drawing.Point(598, 51);
+            this.panel1.Location = new System.Drawing.Point(689, 51);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(27, 23);
             this.panel1.TabIndex = 4;
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            this.panel2.Location = new System.Drawing.Point(598, 80);
+            this.panel2.Location = new System.Drawing.Point(689, 80);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(27, 23);
             this.panel2.TabIndex = 5;
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(140)))));
-            this.panel3.Location = new System.Drawing.Point(598, 109);
+            this.panel3.Location = new System.Drawing.Point(689, 109);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(27, 23);
             this.panel3.TabIndex = 5;
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(255)))), ((int)(((byte)(211)))));
-            this.panel4.Location = new System.Drawing.Point(598, 138);
+            this.panel4.Location = new System.Drawing.Point(689, 138);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(27, 23);
             this.panel4.TabIndex = 5;
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(595, 32);
+            this.label2.Location = new System.Drawing.Point(686, 32);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 6;
@@ -170,17 +157,19 @@
             // 
             // label3
             // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(630, 56);
+            this.label3.Location = new System.Drawing.Point(721, 56);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(169, 13);
+            this.label3.Size = new System.Drawing.Size(235, 13);
             this.label3.TabIndex = 7;
-            this.label3.Text = "Обязательный, введён неверно";
+            this.label3.Text = "Обязательный, введён неверно (для оценок)";
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(630, 85);
+            this.label4.Location = new System.Drawing.Point(721, 85);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(157, 13);
             this.label4.TabIndex = 8;
@@ -188,17 +177,19 @@
             // 
             // label5
             // 
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(630, 114);
+            this.label5.Location = new System.Drawing.Point(721, 114);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 13);
+            this.label5.Size = new System.Drawing.Size(247, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Необязательный, введён неверно";
+            this.label5.Text = "Необязательный, введён неверно (для оценок)";
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(630, 143);
+            this.label6.Location = new System.Drawing.Point(721, 143);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(169, 13);
             this.label6.TabIndex = 10;
@@ -272,6 +263,7 @@
             // 
             // K1003
             // 
+            this.K1003.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.K1003.Enabled = false;
             this.K1003.Location = new System.Drawing.Point(89, 59);
             this.K1003.Name = "K1003";
@@ -294,6 +286,7 @@
             // 
             // buttonPanel
             // 
+            this.buttonPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonPanel.Controls.Add(this.K1004);
             this.buttonPanel.Controls.Add(this.N0305);
             this.buttonPanel.Controls.Add(this.K1003);
@@ -302,14 +295,15 @@
             this.buttonPanel.Controls.Add(this.N0501);
             this.buttonPanel.Controls.Add(this.C0302);
             this.buttonPanel.Controls.Add(this.N0502);
-            this.buttonPanel.Location = new System.Drawing.Point(595, 167);
+            this.buttonPanel.Location = new System.Drawing.Point(686, 167);
             this.buttonPanel.Name = "buttonPanel";
             this.buttonPanel.Size = new System.Drawing.Size(175, 117);
             this.buttonPanel.TabIndex = 19;
             // 
             // SaveData
             // 
-            this.SaveData.Location = new System.Drawing.Point(723, 369);
+            this.SaveData.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.SaveData.Location = new System.Drawing.Point(847, 369);
             this.SaveData.Name = "SaveData";
             this.SaveData.Size = new System.Drawing.Size(112, 23);
             this.SaveData.TabIndex = 12;
@@ -317,13 +311,39 @@
             this.SaveData.UseVisualStyleBackColor = true;
             this.SaveData.Click += new System.EventHandler(this.SaveData_Click);
             // 
+            // Id
+            // 
+            this.Id.HeaderText = "ИД";
+            this.Id.Name = "Id";
+            this.Id.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.Id.Visible = false;
+            // 
+            // Code
+            // 
+            this.Code.HeaderText = "Код";
+            this.Code.Name = "Code";
+            this.Code.ReadOnly = true;
+            this.Code.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Description
+            // 
+            this.Description.HeaderText = "Наименование";
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
+            this.Description.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // Value
+            // 
+            this.Value.HeaderText = "Оценка";
+            this.Value.Name = "Value";
+            this.Value.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
             // Evaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(847, 404);
+            this.ClientSize = new System.Drawing.Size(971, 404);
             this.Controls.Add(this.SaveData);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.buttonPanel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -353,10 +373,6 @@
 
         private System.Windows.Forms.DataGridView CharsListDGV;
         private System.Windows.Forms.Button Compute;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Code;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Value;
         private System.Windows.Forms.Button back;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
@@ -377,7 +393,10 @@
         private System.Windows.Forms.Button K1003;
         private System.Windows.Forms.Button K1004;
         private System.Windows.Forms.Panel buttonPanel;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button SaveData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Code;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Value;
     }
 }

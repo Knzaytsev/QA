@@ -81,7 +81,7 @@ namespace QA
             calculate.GeneralResult(indicators, out Result[] metrics, out Result[] criterias, out Result softwareTool);
             MessageBox.Show("Оценка вашего ПС: " + softwareTool.Assessment, "Результат", MessageBoxButtons.OK);
 
-            DialogResult dialogResult = MessageBox.Show("Хотите сохранить результаты в файл?", "", MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Сохранить результаты в файл?", "", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 SaveFileDialog sfd = new SaveFileDialog();
@@ -143,6 +143,7 @@ namespace QA
                 }
                 if (indicators[i].IdMethod != -1)
                 {
+                    buttonPanel.Controls[indicators[i].IdMethod].BackColor = indicators[i].IdMethod == 0 ? Color.FromArgb(252, 255, 140) : Color.FromArgb(255, 207, 207);
                     buttonPanel.Controls[indicators[i].IdMethod].Enabled = true;
                     methodIndicators.Add(indicators[i]);
                     offset++;

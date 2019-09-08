@@ -228,9 +228,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 308);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 13);
+            this.label1.Size = new System.Drawing.Size(246, 13);
             this.label1.TabIndex = 13;
-            this.label1.Text = "Зайцев Константин, Кузнецова Дарья";
+            this.label1.Text = "Авторы: Зайцев Константин, Кузнецова Дарья";
             // 
             // lodaData
             // 

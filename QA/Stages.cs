@@ -127,14 +127,28 @@ namespace QA
             Indicator[] indicators = indicatorsFilter.FilterIndicators();
             DataSingleton dataSingleton = DataSingleton.GetInstance();
             SavePointSingleton savePointSingleton = SavePointSingleton.GetInstance();
+            int diff = indicators.Count(x => x.IdMethod > -1);
             if (dataSingleton.IdPhase == savePointSingleton.SavePoint.IdPhase &&
                 dataSingleton.SoftwareTool == savePointSingleton.SavePoint.IdSoftwareTool &&
-                indicators.Length == savePointSingleton.SavePoint.IndicatorsValues.Length)
+                indicators.Length == savePointSingleton.SavePoint.IndicatorsValues.Length + diff)
             {
+                int count = 0;
                 for (int i = 0; i < indicators.Length; ++i)
                 {
-                    bool ok = float.TryParse(savePointSingleton.SavePoint.IndicatorsValues[i], out float t);
+                    if (indicators[i].IdMethod > -1)
+                    {
+                        ++count;
+                        continue;
+                    }
+                    bool ok = float.TryParse(savePointSingleton.SavePoint.IndicatorsValues[i - count]?.Replace('.', ','), out float t);
                     indicators[i].Value = ok ? t : -1;
+                }
+            }
+            else
+            {
+                foreach (Indicator indicator in indicators)
+                {
+                    indicator.Value = -1;
                 }
             }
 
