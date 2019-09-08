@@ -77,7 +77,6 @@
     <Compile Include="ComputeTwoParams.Designer.cs">
       <DependentUpon>ComputeTwoParams.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSingleton.cs" />
     <Compile Include="Evaluation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +111,7 @@
     <Compile Include="Repositories\MetricRepository.cs" />
     <Compile Include="Repositories\SavePointRepository.cs" />
     <Compile Include="Repositories\SoftwareToolRepository.cs" />
+    <Compile Include="Singletons\DataSingleton.cs" />
     <Compile Include="Singletons\SavePointSingleton.cs" />
     <Compile Include="Stages.cs">
       <SubType>Form</SubType>
