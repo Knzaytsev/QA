@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QA.Singletons;
 
 namespace QA
 {
@@ -182,6 +183,42 @@ namespace QA
                         ((RadioButton)children).Checked = true;
                         break;
                     }
+                }
+            }
+        }
+
+        private void loadData_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog ofd = new OpenFileDialog())
+            {
+                if (ofd.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        FileUser fileUser = new FileUser(ofd.FileName, new SavePointRepository());
+                        SavePoint savePoint = (SavePoint)fileUser.getElementById(0);
+                        EditSavePoint loader = new EditSavePoint();
+                        loader.LoadSavePoint(savePoint);
+                        CheckRadioButton(savePoint.IdSoftwareTool);
+                        DataSingleton.GetInstance(savePoint.IdPhase, savePoint.IdSoftwareTool);
+                        SavePointSingleton.GetInstance(savePoint);
+                    }
+                    catch (Exception)
+                    {
+                        MessageBox.Show("Ошибка загрузки файла", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+            }
+        }
+
+        private void CheckRadioButton(int id)
+        {
+            foreach (Control control in panel1.Controls)
+            {
+                if (Equals(control.Tag, id.ToString()))
+                {
+                    ((RadioButton) control).Checked = true;
+                    break;
                 }
             }
         }

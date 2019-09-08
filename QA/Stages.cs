@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QA.Filters;
+using QA.Singletons;
 
 namespace QA
 {
@@ -18,9 +19,12 @@ namespace QA
     {
         private bool closedByUser = true;
 
-        public Stages()
+        private float[] indicators;
+
+        public Stages(float[] values = null)
         {
             InitializeComponent();
+            indicators = values;
         }
 
         private void Analysis_CheckedChanged(object sender, EventArgs e)
@@ -120,7 +124,21 @@ namespace QA
         private void ChoosePhase_Click(object sender, EventArgs e)
         {
             IndicatorsFilter indicatorsFilter = new IndicatorsFilter();
-            Evaluation form = new Evaluation(indicatorsFilter.FilterIndicators());
+            Indicator[] indicators = indicatorsFilter.FilterIndicators();
+            DataSingleton dataSingleton = DataSingleton.GetInstance();
+            SavePointSingleton savePointSingleton = SavePointSingleton.GetInstance();
+            if (dataSingleton.IdPhase == savePointSingleton.SavePoint.IdPhase &&
+                dataSingleton.SoftwareTool == savePointSingleton.SavePoint.IdSoftwareTool &&
+                indicators.Length == savePointSingleton.SavePoint.IndicatorsValues.Length)
+            {
+                for (int i = 0; i < indicators.Length; ++i)
+                {
+                    float.TryParse(savePointSingleton.SavePoint.IndicatorsValues[i], out float t);
+                    indicators[i].Value = t;
+                }
+            }
+
+            Evaluation form = new Evaluation(indicators);
             form.Show();
             closedByUser = false;
             Close();
