@@ -92,15 +92,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(187, 132);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Cancel);
             this.Controls.Add(this.Compute);
             this.Controls.Add(this.b);
             this.Controls.Add(this.a);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "ComputeTwoParams";
-            this.Text = "ComputeTwoParams";
+            this.Text = "Вычисление";
             this.Load += new System.EventHandler(this.LoadForm);
             this.ResumeLayout(false);
             this.PerformLayout();
