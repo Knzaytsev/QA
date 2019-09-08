@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QA.Repositories;
 
 namespace QA
 {
@@ -147,7 +148,7 @@ namespace QA
                     offset++;
                     continue;
                 }
-                CharsListDGV.Rows.Add(indicators[i].Id, indicators[i].Code, indicators[i].Description);
+                CharsListDGV.Rows.Add(indicators[i].Id, indicators[i].Code, indicators[i].Description, indicators[i].Value == -1 ? "" : indicators[i].Value.ToString());
                 CharsListDGV["Value", i - offset].Tag = tag;
                 CharsListDGV["Value", i - offset].Style.BackColor = color;
             }
@@ -255,6 +256,27 @@ namespace QA
             }
             int id = indicators.ToList().IndexOf(indicator);
             indicators[id].Value = result;
+        }
+
+        private void SaveData_Click(object sender, EventArgs e)
+        {
+            using (SaveFileDialog sfd = new SaveFileDialog())
+            {
+                sfd.Filter = "xml files (*.xml)|*.xml";
+                if (sfd.ShowDialog() == DialogResult.OK)
+                {
+                    DataSingleton instance = DataSingleton.GetInstance();
+
+                    List<string> values = new List<string>();
+                    for (int i = 0; i < CharsListDGV.RowCount; ++i)
+                    {
+                        values.Add(CharsListDGV["Value", i].Value != null ? CharsListDGV["Value", i].Value.ToString() : "");
+                    }
+                    SavePoint savePoint = new SavePoint(instance.IdPhase, instance.SoftwareTool, values.ToArray());
+                    SavePointRepository savePointRepository = new SavePointRepository();
+                    savePointRepository.SaveElement(savePoint, sfd.FileName);
+                }
+            }
         }
     }
 }

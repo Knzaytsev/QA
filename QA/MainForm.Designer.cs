@@ -43,6 +43,7 @@
             this.OSradioButton = new System.Windows.Forms.RadioButton();
             this.ChooseClass = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.lodaData = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -214,9 +215,9 @@
             // 
             // ChooseClass
             // 
-            this.ChooseClass.Location = new System.Drawing.Point(464, 303);
+            this.ChooseClass.Location = new System.Drawing.Point(506, 303);
             this.ChooseClass.Name = "ChooseClass";
-            this.ChooseClass.Size = new System.Drawing.Size(117, 23);
+            this.ChooseClass.Size = new System.Drawing.Size(75, 23);
             this.ChooseClass.TabIndex = 12;
             this.ChooseClass.Text = "Далее";
             this.ChooseClass.UseVisualStyleBackColor = true;
@@ -231,12 +232,23 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Зайцев Константин, Кузнецова Дарья";
             // 
+            // lodaData
+            // 
+            this.lodaData.Location = new System.Drawing.Point(425, 303);
+            this.lodaData.Name = "lodaData";
+            this.lodaData.Size = new System.Drawing.Size(75, 23);
+            this.lodaData.TabIndex = 14;
+            this.lodaData.Text = "Загрузить";
+            this.lodaData.UseVisualStyleBackColor = true;
+            this.lodaData.Click += new System.EventHandler(this.loadData_Click);
+            // 
             // MainForm
             // 
             this.AcceptButton = this.ChooseClass;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(593, 336);
+            this.Controls.Add(this.lodaData);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ChooseClass);
             this.Controls.Add(this.panel1);
@@ -267,6 +279,7 @@
         private System.Windows.Forms.RadioButton OtherRadioButton;
         private System.Windows.Forms.Button ChooseClass;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button lodaData;
     }
 }
 

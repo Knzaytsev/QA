@@ -63,6 +63,7 @@
     <Compile Include="Classes\Metric.cs" />
     <Compile Include="Classes\Phase.cs" />
     <Compile Include="Classes\Result.cs" />
+    <Compile Include="Classes\SavePoint.cs" />
     <Compile Include="Classes\SoftwareTool.cs" />
     <Compile Include="ComputeSomeParams.cs">
       <SubType>Form</SubType>
@@ -76,7 +77,6 @@
     <Compile Include="ComputeTwoParams.Designer.cs">
       <DependentUpon>ComputeTwoParams.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataSingleton.cs" />
     <Compile Include="Evaluation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +92,7 @@
     <Compile Include="Interactors\GetSoftwareTools.cs" />
     <Compile Include="Interactors\IGet.cs" />
     <Compile Include="Interactors\IGetItems.cs" />
+    <Compile Include="Interactors\EditSavePoint.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,7 +109,10 @@
     <Compile Include="Repositories\IGetElement.cs" />
     <Compile Include="Repositories\LifeCyclePhaseRepository.cs" />
     <Compile Include="Repositories\MetricRepository.cs" />
+    <Compile Include="Repositories\SavePointRepository.cs" />
     <Compile Include="Repositories\SoftwareToolRepository.cs" />
+    <Compile Include="Singletons\DataSingleton.cs" />
+    <Compile Include="Singletons\SavePointSingleton.cs" />
     <Compile Include="Stages.cs">
       <SubType>Form</SubType>
     </Compile>

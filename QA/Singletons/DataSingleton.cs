@@ -59,6 +59,17 @@ namespace QA
             return instance;
         }
 
+        public static DataSingleton GetInstance(int idPhase, int idSt)
+        {
+            if (instance is null)
+            {
+                instance = new DataSingleton();
+            }
+            instance.SetPhase(idPhase);
+            instance.SetSt(idSt);
+            return instance;
+        }
+
         public static DataSingleton GetInstance(int[] priorities)
         {
             if (instance is null)
