@@ -27,16 +27,18 @@ namespace QA
             List<Result> results = new List<Result>();
             float sum;
             int count;
-            IEnumerable<Indicator> neededIndicators = new List<Indicator>();
+            List<Indicator> neededIndicators;
             foreach (Metric metric in metrics)
             {
+                neededIndicators = new List<Indicator>();
                 sum = 0;
                 count = 0;
                 temp = metric.Metrics.Split(' ');
                 foreach (string t in temp)
                 {
-                    neededIndicators = indicators.Where(x => x.Code.StartsWith(t));
+                    neededIndicators.AddRange(indicators.Where(x => x.Code.StartsWith(t)));
                 }
+                if (neededIndicators.Count == 0) { continue; }
 
                 foreach (Indicator indicator in neededIndicators)
                 {
