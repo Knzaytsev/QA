@@ -14,6 +14,9 @@ namespace QA
     public partial class Evaluation : Form
     {
         private Indicator[] indicators;
+
+        private bool closedByUser = true;
+
         public Evaluation(Indicator[] indicators)
         {
             InitializeComponent();
@@ -29,10 +32,10 @@ namespace QA
                 switch (tag)
                 {
                     case "w":
-                        CharsListDGV["Value", i].Style.BackColor = System.Drawing.Color.White;
+                        CharsListDGV["Value", i].Style.BackColor = System.Drawing.Color.FromArgb(255, 240, 240); //всё ок
                         break;
                     case "y":
-                        CharsListDGV["Value", i].Style.BackColor = System.Drawing.Color.FromArgb(254, 255, 171);
+                        CharsListDGV["Value", i].Style.BackColor = System.Drawing.Color.FromArgb(254, 255, 211); //всё ок
                         break;
                 }
                 if (tag == "y" && CharsListDGV["Value", i].Value is null)
@@ -42,13 +45,14 @@ namespace QA
                 float value = 0;
                 try
                 {
-                    value = float.Parse(((string)CharsListDGV["Value", i].Value).Replace('.', ','));
+                    value = float.Parse(((string) CharsListDGV["Value", i].Value).Replace('.', ','));
                     if (value > 1 || value < 0)
                         throw new Exception();
                 }
-                catch(Exception exc)
+                catch (Exception exc)
                 {
-                    CharsListDGV["Value", i].Style.BackColor = System.Drawing.Color.FromArgb(255, 207, 207);
+                    CharsListDGV["Value", i].Style.BackColor = tag == "w" ? System.Drawing.Color.FromArgb(255, 207, 207) : System.Drawing.Color.FromArgb(252, 255, 140);
+
                     flag = false;
                 }
             }
@@ -81,16 +85,16 @@ namespace QA
         {
             for (int i = 0; i < indicators.Length; ++i)
             {
-                Color color = Color.White;
+                Color color = Color.FromArgb(255, 207, 207); //незаполнено или ошибка
                 string tag = "";
                 switch (indicators[i].Priority)
                 {
                     case 1:
-                        color = Color.White;
+                        color = Color.FromArgb(255, 207, 207);
                         tag = "w";
                         break;
                     case 0:
-                        color = Color.FromArgb(254, 255, 171);
+                        color = Color.FromArgb(252, 255, 140);
                         tag = "y";
                         break;
                     case -1:
@@ -106,7 +110,16 @@ namespace QA
         {
             Stages form = new Stages();
             form.Show();
+            closedByUser = false;
             this.Close();
+        }
+
+        private void Evaluation_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (closedByUser)
+            {
+                Application.Exit();
+            }
         }
     }
 }

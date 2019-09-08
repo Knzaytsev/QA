@@ -169,5 +169,21 @@ namespace QA
             form.Show();
             this.Visible = false;
         }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            DataSingleton instance = DataSingleton.GetInstance();
+            if (instance != null)
+            {
+                foreach (Control children in panel1.Controls)
+                {
+                    if (Equals(children.Tag, instance.SoftwareTool.ToString()))
+                    {
+                        ((RadioButton)children).Checked = true;
+                        break;
+                    }
+                }
+            }
+        }
     }
 }
