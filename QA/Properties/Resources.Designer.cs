@@ -22,7 +22,7 @@ namespace QA.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace QA.Properties {
         ///   Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("QA.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace QA.Properties {
         ///   обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -74,7 +74,7 @@ namespace QA.Properties {
         ///		&lt;Id&gt;1&lt;/Id&gt;
         ///		&lt;Fa [остаток строки не уместился]&quot;;.
         /// </summary>
-        internal static string Criteria {
+        public static string Criteria {
             get {
                 return ResourceManager.GetString("Criteria", resourceCulture);
             }
@@ -96,7 +96,7 @@ namespace QA.Properties {
         ///		&lt;IdMethod&gt;-1&lt;/IdMethod&gt;
         ///	&lt;/Indicat [остаток строки не уместился]&quot;;.
         /// </summary>
-        internal static string Indicators {
+        public static string Indicators {
             get {
                 return ResourceManager.GetString("Indicators", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace QA.Properties {
         ///		&lt;Step&gt;Логическое проектирование&lt;/Step&gt;
         ///		&lt;Result&gt;Логический проект (функциональный проект). Программно-технический проект: системы, программ, модулей, документаци [остаток строки не уместился]&quot;;.
         /// </summary>
-        internal static string LifeCyclePhases {
+        public static string LifeCyclePhases {
             get {
                 return ResourceManager.GetString("LifeCyclePhases", resourceCulture);
             }
@@ -147,7 +147,7 @@ namespace QA.Properties {
         ///	&lt;Metric&gt;
         ///		 [остаток строки не уместился]&quot;;.
         /// </summary>
-        internal static string Metrics {
+        public static string Metrics {
             get {
                 return ResourceManager.GetString("Metrics", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace QA.Properties {
         ///		&lt;IdGOST&gt;5013&lt;/IdGOST&gt;
         ///		&lt;Description&gt;Инструм [остаток строки не уместился]&quot;;.
         /// </summary>
-        internal static string SoftwareTools {
+        public static string SoftwareTools {
             get {
                 return ResourceManager.GetString("SoftwareTools", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace QA.Properties {
         ///1 1 1 1 1 1 1 1 1 1 1 0
         ///1 1 1 1 1 1 1 1 1 1 1 0.
         /// </summary>
-        internal static string SoftwareToolsAndCritariaMatrix {
+        public static string SoftwareToolsAndCritariaMatrix {
             get {
                 return ResourceManager.GetString("SoftwareToolsAndCritariaMatrix", resourceCulture);
             }
