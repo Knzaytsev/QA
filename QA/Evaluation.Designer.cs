@@ -202,6 +202,7 @@
             this.N0305.Name = "N0305";
             this.N0305.Size = new System.Drawing.Size(75, 23);
             this.N0305.TabIndex = 11;
+            this.N0305.Tag = "0";
             this.N0305.Text = "Н0305";
             this.N0305.UseVisualStyleBackColor = true;
             this.N0305.Click += new System.EventHandler(this.N0305_Click);
@@ -213,6 +214,7 @@
             this.N0401.Name = "N0401";
             this.N0401.Size = new System.Drawing.Size(75, 23);
             this.N0401.TabIndex = 12;
+            this.N0401.Tag = "1";
             this.N0401.Text = "Н0401";
             this.N0401.UseVisualStyleBackColor = true;
             this.N0401.Click += new System.EventHandler(this.N0401_Click);
@@ -224,6 +226,7 @@
             this.N0501.Name = "N0501";
             this.N0501.Size = new System.Drawing.Size(75, 23);
             this.N0501.TabIndex = 13;
+            this.N0501.Tag = "2";
             this.N0501.Text = "Н0501";
             this.N0501.UseVisualStyleBackColor = true;
             this.N0501.Click += new System.EventHandler(this.N0501_Click);
@@ -235,6 +238,7 @@
             this.N0502.Name = "N0502";
             this.N0502.Size = new System.Drawing.Size(75, 23);
             this.N0502.TabIndex = 14;
+            this.N0502.Tag = "3";
             this.N0502.Text = "Н0502";
             this.N0502.UseVisualStyleBackColor = true;
             this.N0502.Click += new System.EventHandler(this.N0502_Click);
@@ -246,6 +250,7 @@
             this.C0302.Name = "C0302";
             this.C0302.Size = new System.Drawing.Size(75, 23);
             this.C0302.TabIndex = 15;
+            this.C0302.Tag = "4";
             this.C0302.Text = "С0302";
             this.C0302.UseVisualStyleBackColor = true;
             this.C0302.Click += new System.EventHandler(this.C0302_Click);
@@ -257,6 +262,7 @@
             this.C1002.Name = "C1002";
             this.C1002.Size = new System.Drawing.Size(75, 23);
             this.C1002.TabIndex = 16;
+            this.C1002.Tag = "5";
             this.C1002.Text = "С1002";
             this.C1002.UseVisualStyleBackColor = true;
             this.C1002.Click += new System.EventHandler(this.C1002_Click);
@@ -269,6 +275,7 @@
             this.K1003.Name = "K1003";
             this.K1003.Size = new System.Drawing.Size(75, 23);
             this.K1003.TabIndex = 17;
+            this.K1003.Tag = "6";
             this.K1003.Text = "К1003";
             this.K1003.UseVisualStyleBackColor = true;
             this.K1003.Click += new System.EventHandler(this.K1003_Click);
@@ -280,6 +287,7 @@
             this.K1004.Name = "K1004";
             this.K1004.Size = new System.Drawing.Size(75, 23);
             this.K1004.TabIndex = 18;
+            this.K1004.Tag = "7";
             this.K1004.Text = "К1004";
             this.K1004.UseVisualStyleBackColor = true;
             this.K1004.Click += new System.EventHandler(this.K1004_Click);

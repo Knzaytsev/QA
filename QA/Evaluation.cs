@@ -42,7 +42,7 @@ namespace QA
                         CharsListDGV["Value", i].Style.BackColor = System.Drawing.Color.FromArgb(254, 255, 211); //всё ок
                         break;
                 }
-                if (tag == "y" && CharsListDGV["Value", i].Value is null)
+                if (tag == "y" && (CharsListDGV["Value", i].Value is null || (string)CharsListDGV["Value", i].Value == ""))
                 {
                     continue;
                 }
@@ -66,7 +66,7 @@ namespace QA
             for (int i = 0; i < CharsListDGV.Rows.Count; ++i)
             {
                 string tag = (string)CharsListDGV["Value", i].Tag;
-                if (tag == "y" && CharsListDGV["Value", i].Value is null)
+                if (tag == "y" && (CharsListDGV["Value", i].Value is null || (string)CharsListDGV["Value", i].Value == ""))
                 {
                     continue;
                 }
@@ -143,9 +143,15 @@ namespace QA
                 }
                 if (indicators[i].IdMethod != -1)
                 {
-                    buttonPanel.Controls[indicators[i].IdMethod].BackColor = indicators[i].IdMethod == 0 ? Color.FromArgb(252, 255, 140) : Color.FromArgb(255, 207, 207);
-                    buttonPanel.Controls[indicators[i].IdMethod].Enabled = true;
-                    methodIndicators.Add(indicators[i]);
+                    foreach (Button c in buttonPanel.Controls)
+                    {
+                        if (Equals(c.Tag, indicators[i].IdMethod.ToString()))
+                        {
+                            c.BackColor = indicators[i].Priority == 0 ? Color.FromArgb(252, 255, 140) : Color.FromArgb(255, 207, 207);
+                            c.Enabled = true;
+                            methodIndicators.Add(indicators[i]);
+                        }
+                    }
                     offset++;
                     continue;
                 }
