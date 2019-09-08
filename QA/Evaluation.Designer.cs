@@ -45,6 +45,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.CharsListDGV)).BeginInit();
             this.SuspendLayout();
             // 
@@ -192,11 +193,21 @@
             this.label6.TabIndex = 10;
             this.label6.Text = "Необязательный, введён верно";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(595, 164);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(230, 26);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Результаты оценки всех уровней доступны \r\nпри сохранении в файл";
+            // 
             // Evaluation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(847, 404);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -239,5 +250,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }

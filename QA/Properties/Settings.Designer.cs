@@ -12,7 +12,7 @@ namespace QA.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.2.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -25,7 +25,7 @@ namespace QA.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\Data\\Indicators.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data\\Indicators.xml")]
         public string Indicators {
             get {
                 return ((string)(this["Indicators"]));
@@ -34,7 +34,7 @@ namespace QA.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\Data\\Metrics.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data\\Metrics.xml")]
         public string Metrics {
             get {
                 return ((string)(this["Metrics"]));
@@ -43,7 +43,7 @@ namespace QA.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\Data\\Criteria.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data\\Criteria.xml")]
         public string Criteria {
             get {
                 return ((string)(this["Criteria"]));
@@ -52,7 +52,7 @@ namespace QA.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\Data\\SoftwareToolsAndCritariaMatrix.txt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data\\SoftwareToolsAndCritariaMatrix.txt")]
         public string Matrix {
             get {
                 return ((string)(this["Matrix"]));
@@ -61,7 +61,7 @@ namespace QA.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\Data\\LifeCyclePhases.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data\\LifeCyclePhases.xml")]
         public string Phases {
             get {
                 return ((string)(this["Phases"]));
@@ -70,7 +70,7 @@ namespace QA.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\Data\\SoftwareTools.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data\\SoftwareTools.xml")]
         public string SoftwareTools {
             get {
                 return ((string)(this["SoftwareTools"]));
