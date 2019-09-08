@@ -1,4 +1,5 @@
 ﻿using QA.Classes;
+using QA.Calculators;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace QA
     public partial class Evaluation : Form
     {
         private Indicator[] indicators;
+        private List<Indicator> methodIndicators = new List<Indicator>();
 
         private bool closedByUser = true;
 
@@ -120,6 +122,7 @@ namespace QA
 
         private void EvaluationLoad(object sender, EventArgs e)
         {
+            int offset = 0;
             for (int i = 0; i < indicators.Length; ++i)
             {
                 Color color = Color.FromArgb(255, 207, 207); //незаполнено или ошибка
@@ -137,9 +140,16 @@ namespace QA
                     case -1:
                         continue;
                 }
+                if (indicators[i].IdMethod != -1)
+                {
+                    buttonPanel.Controls[indicators[i].IdMethod].Enabled = true;
+                    methodIndicators.Add(indicators[i]);
+                    offset++;
+                    continue;
+                }
                 CharsListDGV.Rows.Add(indicators[i].Id, indicators[i].Code, indicators[i].Description);
-                CharsListDGV["Value", i].Tag = tag;
-                CharsListDGV["Value", i].Style.BackColor = color;
+                CharsListDGV["Value", i - offset].Tag = tag;
+                CharsListDGV["Value", i - offset].Style.BackColor = color;
             }
         }
 
@@ -157,6 +167,94 @@ namespace QA
             {
                 Application.Exit();
             }
+        }
+
+        private void N0305_Click(object sender, EventArgs e)
+        {
+            ComputeTwoParams form = new ComputeTwoParams(new N0305());
+            if (form.ShowDialog() == DialogResult.Cancel)
+                return;
+            float result = form.Result;
+            SetValue(0, result);
+        }
+
+        private void N0401_Click(object sender, EventArgs e)
+        {
+            ComputeTwoParams form = new ComputeTwoParams(new N0401());
+            if (form.ShowDialog() == DialogResult.Cancel)
+                return;
+            float result = form.Result;
+            SetValue(1, result);
+        }
+
+        private void N0501_Click(object sender, EventArgs e)
+        {
+            ComputeSomeParams form = new ComputeSomeParams();
+            if (form.ShowDialog() == DialogResult.Cancel)
+                return;
+            float result = form.Result;
+            SetValue(2, result);
+        }
+
+        private void N0502_Click(object sender, EventArgs e)
+        {
+            ComputeTwoParams form = new ComputeTwoParams(new N0502());
+            if (form.ShowDialog() == DialogResult.Cancel)
+                return;
+            float result = form.Result;
+            SetValue(3, result);
+        }
+
+        private void C0302_Click(object sender, EventArgs e)
+        {
+            ComputeTwoParams form = new ComputeTwoParams(new C0302());
+            if (form.ShowDialog() == DialogResult.Cancel)
+                return;
+            float result = form.Result;
+            SetValue(4, result);
+
+        }
+
+        private void C1002_Click(object sender, EventArgs e)
+        {
+            ComputeTwoParams form = new ComputeTwoParams(new C1002());
+            if (form.ShowDialog() == DialogResult.Cancel)
+                return;
+            float result = form.Result;
+            SetValue(5, result);
+        }
+
+        private void K1003_Click(object sender, EventArgs e)
+        {
+            ComputeTwoParams form = new ComputeTwoParams(new K1003());
+            if (form.ShowDialog() == DialogResult.Cancel)
+                return;
+            float result = form.Result;
+            SetValue(6, result);
+        }
+
+        private void K1004_Click(object sender, EventArgs e)
+        {
+            ComputeTwoParams form = new ComputeTwoParams(new K1004());
+            if (form.ShowDialog() == DialogResult.Cancel)
+                return;
+            float result = form.Result;
+            SetValue(7, result);
+        }
+
+        private void SetValue(int idMethod, float result)
+        {
+            Indicator indicator = new Indicator();
+            for(int i = 0; i < methodIndicators.Count; ++i)
+            {
+                if (methodIndicators[i].IdMethod == idMethod)
+                {
+                    indicator = methodIndicators[i];
+                    break;
+                }
+            }
+            int id = indicators.ToList().IndexOf(indicator);
+            indicators[id].Value = result;
         }
     }
 }

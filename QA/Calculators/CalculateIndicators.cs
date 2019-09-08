@@ -13,7 +13,7 @@ namespace QA.Calculators
             return 1.0f - (float) d / (float) k;
         }
 
-        public float Ind_H0402(int q, int n)
+        public float Ind_H0401(int q, int n)
         {
             return 1.0f - (float) q / (float) n;
         }
