@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -70,11 +71,47 @@ namespace QA
 
             }
             CalculateResult calculate = new CalculateResult();
-            //Result[] results = calculate.CalculateMetrics(indicators);
-            //results = calculate.CalculateCriteria(results);
-            //Result result = calculate.CalculateSoftwareTool(results);
             calculate.GeneralResult(indicators, out Result[] metrics, out Result[] criterias, out Result softwareTool);
             MessageBox.Show("Оценка вашего ПС: " + softwareTool.Assessment, "Результат", MessageBoxButtons.OK);
+
+            DialogResult dialogResult = MessageBox.Show("Хотите сохранить результаты в файл?", "", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes)
+            {
+                SaveFileDialog sfd = new SaveFileDialog();
+                sfd.Filter = "Text files(*.txt)|*.txt";
+                if (sfd.ShowDialog() == DialogResult.Cancel)
+                {
+                    return;
+                }
+                string fileName = sfd.FileName;
+                using (StreamWriter sw = new StreamWriter(new FileStream(fileName, FileMode.OpenOrCreate)))
+                {
+                    string resultGeneral = "Ваш общий результат оценки ПС: " + softwareTool.Assessment;
+                    sw.WriteLine(resultGeneral);
+                    sw.WriteLine();
+                    resultGeneral = "Ваши результаты на уровне критериев:";
+                    sw.WriteLine(resultGeneral);
+                    foreach (var c in criterias)
+                    {
+                        Criteria criteria = (Criteria)c.Layer;
+                        resultGeneral = "Критерий: " + criteria.Description;
+                        sw.WriteLine(resultGeneral);
+                        resultGeneral = "Оценка критерия: " + c.Assessment;
+                        sw.WriteLine(resultGeneral);
+                    }
+                    sw.WriteLine();
+                    resultGeneral = "Ваши результаты на уровне метрик:";
+                    sw.WriteLine(resultGeneral);
+                    foreach (var m in metrics)
+                    {
+                        Metric metric = (Metric)m.Layer;
+                        resultGeneral = "Метрики: " + metric.Metrics;
+                        sw.WriteLine(resultGeneral);
+                        resultGeneral = "Оценка метрик: " + m.Assessment;
+                        sw.WriteLine(resultGeneral);
+                    }
+                }
+            }
         }
 
         private void EvaluationLoad(object sender, EventArgs e)
