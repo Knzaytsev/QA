@@ -148,7 +148,7 @@ namespace QA
                     offset++;
                     continue;
                 }
-                CharsListDGV.Rows.Add(indicators[i].Id, indicators[i].Code, indicators[i].Description);
+                CharsListDGV.Rows.Add(indicators[i].Id, indicators[i].Code, indicators[i].Description, indicators[i].Value == -1 ? "" : indicators[i].Value.ToString());
                 CharsListDGV["Value", i - offset].Tag = tag;
                 CharsListDGV["Value", i - offset].Style.BackColor = color;
             }
