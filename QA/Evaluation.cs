@@ -42,7 +42,7 @@ namespace QA
                 float value = 0;
                 try
                 {
-                    value = float.Parse((string)CharsListDGV["Value", i].Value);
+                    value = float.Parse(((string)CharsListDGV["Value", i].Value).Replace('.', ','));
                     if (value > 1 || value < 0)
                         throw new Exception();
                 }
@@ -62,7 +62,7 @@ namespace QA
                 {
                     continue;
                 }
-                float value = float.Parse((string)CharsListDGV["Value", i].Value);
+                float value = float.Parse(((string)CharsListDGV["Value", i].Value).Replace('.', ','));
                 int id = (int)CharsListDGV["Id", i].Value;
                 Indicator ind = (from indicator in indicators where indicator.Id == id select indicator).First();
                 id = indicators.ToList().IndexOf(ind);
@@ -70,10 +70,11 @@ namespace QA
 
             }
             CalculateResult calculate = new CalculateResult();
-            Result[] results = calculate.CalculateMetrics(indicators);
-            results = calculate.CalculateCriteria(results);
-            Result result = calculate.CalculateSoftwareTool(results);
-            MessageBox.Show("Оценка вашего ПС: " + result.Assessment, "Результат", MessageBoxButtons.OK);
+            //Result[] results = calculate.CalculateMetrics(indicators);
+            //results = calculate.CalculateCriteria(results);
+            //Result result = calculate.CalculateSoftwareTool(results);
+            calculate.GeneralResult(indicators, out Result[] metrics, out Result[] criterias, out Result softwareTool);
+            MessageBox.Show("Оценка вашего ПС: " + softwareTool.Assessment, "Результат", MessageBoxButtons.OK);
         }
 
         private void EvaluationLoad(object sender, EventArgs e)

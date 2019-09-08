@@ -19,7 +19,7 @@ namespace QA
             stResult = CalculateSoftwareTool(criteriaResults);
         }
 
-        public Result[] CalculateMetrics(Indicator[] indicators)
+        private Result[] CalculateMetrics(Indicator[] indicators)
         {
             MetricsFilter metricsFilter = new MetricsFilter();
             Metric[] metrics = metricsFilter.FilterMetrics();
@@ -50,7 +50,7 @@ namespace QA
             return results.ToArray();
         }
 
-        public Result[] CalculateCriteria(Result[] metrics)
+        private Result[] CalculateCriteria(Result[] metrics)
         {
             FileUser fileUser = new FileUser(Properties.Settings.Default.Criteria, new CriteriasRepository());
             Criteria[] allCriterias = (Criteria[]) fileUser.getElements();
@@ -79,7 +79,7 @@ namespace QA
             return results.ToArray();
         }
 
-        public Result CalculateSoftwareTool(Result[] criterias)
+        private Result CalculateSoftwareTool(Result[] criterias)
         {
             float sum = 0;
             float count = 0;
