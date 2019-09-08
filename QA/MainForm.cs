@@ -191,6 +191,7 @@ namespace QA
         {
             using (OpenFileDialog ofd = new OpenFileDialog())
             {
+                ofd.Filter = "xml files (*.xml)|*.xml";
                 if (ofd.ShowDialog() == DialogResult.OK)
                 {
                     try

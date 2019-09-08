@@ -138,7 +138,7 @@ namespace QA
                     case -1:
                         continue;
                 }
-                CharsListDGV.Rows.Add(indicators[i].Id, indicators[i].Code, indicators[i].Description, indicators[i].Value);
+                CharsListDGV.Rows.Add(indicators[i].Id, indicators[i].Code, indicators[i].Description, indicators[i].Value == -1 ? "" : indicators[i].Value.ToString());
                 CharsListDGV["Value", i].Tag = tag;
                 CharsListDGV["Value", i].Style.BackColor = color;
             }

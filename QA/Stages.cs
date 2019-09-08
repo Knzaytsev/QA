@@ -133,8 +133,8 @@ namespace QA
             {
                 for (int i = 0; i < indicators.Length; ++i)
                 {
-                    float.TryParse(savePointSingleton.SavePoint.IndicatorsValues[i], out float t);
-                    indicators[i].Value = t;
+                    bool ok = float.TryParse(savePointSingleton.SavePoint.IndicatorsValues[i], out float t);
+                    indicators[i].Value = ok ? t : -1;
                 }
             }
 
